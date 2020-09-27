@@ -31,8 +31,9 @@ const useStyles = makeStyles((theme) => ({
   },
   appBar: {
     [theme.breakpoints.up('sm')]: {
-      width: `calc(100% - ${drawerWidth}px)`,
-      marginLeft: drawerWidth,
+    //   width: `calc(100% - ${drawerWidth}px)`,
+    //   marginLeft: drawerWidth,
+        opacity: '0',
     },
   },
   menuButton: {
@@ -92,7 +93,9 @@ function ResponsiveDrawer(props) {
   return (
     <div className={classes.root}>
       <CssBaseline />
-      <IconButton
+      <AppBar position="fixed" className={classes.appBar}>
+        <Toolbar>
+          <IconButton
             color="inherit"
             aria-label="open drawer"
             edge="start"
@@ -100,7 +103,12 @@ function ResponsiveDrawer(props) {
             className={classes.menuButton}
           >
             <MenuIcon />
-        </IconButton>
+          </IconButton>
+          <Typography variant="h6" noWrap>
+            Nick King
+          </Typography>
+        </Toolbar>
+      </AppBar>
       <nav className={classes.drawer} aria-label="mailbox folders">
         <Hidden smUp implementation="css">
           <Drawer

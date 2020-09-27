@@ -5,7 +5,7 @@ const Home = (props) => {
 
     return (
         <div className="base">
-           <p>Hello, World!</p>
+           Hello, Wolrd!
         </div>
     )
 };
