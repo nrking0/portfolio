@@ -16,6 +16,7 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import Scroll from 'react-scroll'
 import {Link} from 'react-scroll';
+import './Sidebar.css';
 
 const drawerWidth = 280;
 
@@ -73,13 +74,13 @@ function ResponsiveDrawer(props) {
             <List>
 
                 <ListItem>
-                <Link activeClass="active" to="Home" spy={true} smooth={true} duration={1000}>
+                <Link className="homeButton" activeClass="active" to="Home" spy={true} smooth={true} duration={1000}>
                 <ListItemText style={{cursor: 'pointer'}} primary="Home" />
                 </Link>
                 </ListItem>
 
                 <ListItem>
-                <Link activeClass="active" to="About" spy={true} smooth={true} duration={1000}>
+                <Link className="homeButton" activeClass="active" to="About" spy={true} smooth={true} duration={1000}>
                 <ListItemText style={{cursor: 'pointer'}} primary="About" />
                 </Link>
                 </ListItem>
