@@ -16,6 +16,7 @@
 
 
 .arrow {
+    cursor: pointer;
     opacity: 0;
     color: white;
     position: relative;

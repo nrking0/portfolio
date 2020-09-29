@@ -57,18 +57,31 @@ const useStyles = makeStyles((theme) => ({
     },
     sideText: {
         cursor: 'pointer',
+        '&:before': {
+            content: '""',
+            position: 'absolute',
+            bottom: '0',
+            right: '50%',
+            height: '0',
+            width: '0%',
+            borderBottom: '2px solid #fa8072',
+            transition: 'width 0.3s ease',
+        },
         '&:after': {
             content: '""',
             position: 'absolute',
             bottom: '0',
-            left: '0',
+            left: '50%',
             height: '0',
             width: '0%',
             borderBottom: '2px solid #fa8072',
             transition: 'width 0.3s ease',
         },
         '&:hover:after': {
-            width: '100%',
+            width: '50%',
+        },
+        '&:hover:before': {
+            width: '50%'
         }
     },
 }));
@@ -100,6 +113,24 @@ function ResponsiveDrawer(props) {
                 <ListItem>
                 <Link className="homeButton" activeClass="active" to="About" spy={true} smooth={true} duration={1000}>
                 <ListItemText className={classes.sideText} primary="About" />
+                </Link>
+                </ListItem>
+
+                <ListItem>
+                <Link className="homeButton" activeClass="active" to="About" spy={true} smooth={true} duration={1000}>
+                <ListItemText className={classes.sideText} primary="Projects" />
+                </Link>
+                </ListItem>
+
+                <ListItem>
+                <Link className="homeButton" activeClass="active" to="About" spy={true} smooth={true} duration={1000}>
+                <ListItemText className={classes.sideText} primary="Experience" />
+                </Link>
+                </ListItem>
+
+                <ListItem>
+                <Link className="homeButton" activeClass="active" to="About" spy={true} smooth={true} duration={1000}>
+                <ListItemText className={classes.sideText} primary="Contact" />
                 </Link>
                 </ListItem>
 
