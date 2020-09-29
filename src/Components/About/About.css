@@ -2,11 +2,18 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     height: 100vh;
     background: rgb(255,255,255);
-    background: linear-gradient(0deg, rgba(255,255,255,1) 20%, rgba(250,128,114,1) 68%);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 30%, rgba(250,128,114,1) 98%);
     overflow: hidden;
 }
 
 .AboutText h1{
+    margin-top: 3%;
     position: relative;
     color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    .AboutText h1{
+        margin-top: 20%;
+    }
 }

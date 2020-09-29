@@ -37,6 +37,7 @@
     animation-delay: 0s;
     position: relative;
     top: 6%;
+    text-shadow: black 0px 0px 10px;
 } 
 
 .base p {
@@ -46,6 +47,7 @@
     position: relative;
     top: 3%;
     animation-delay: 2s;
+    text-shadow: black 0px 0px 10px;
 }
 @keyframes fadeInAnimation { 
     0% {
