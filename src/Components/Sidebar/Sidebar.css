@@ -2,4 +2,15 @@
     position: relative;
     left: 50%;
     transform: translate(-50%, 0%);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.headshot {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+    width: 75%;
+    height: 25vh;
+    border-radius: 50%;
 }

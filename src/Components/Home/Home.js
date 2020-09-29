@@ -1,15 +1,21 @@
 import React from 'react';
 import './Home.css';
 import { Element } from 'react-scroll';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import { Link } from 'react-scroll';
 
 
 const Home = (props) => {
 
     return (
         <Element id="Home">
-        <div className="base">
-           Hello, World!
-        </div>
+            <div className="base">
+                <h1>Hello, I am Nick!</h1>
+                <p>Student and Developer</p>
+                <div className="arrow">
+                    <Link className="arrows" activeClass="active" to="About" spy={true} smooth={true} duration={1000}><ExpandMoreIcon className="arrows" fontSize="large" color="inherit" /></Link>
+                </div>
+            </div>
         </Element>
     )
 };

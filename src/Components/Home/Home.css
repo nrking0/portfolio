@@ -1,10 +1,60 @@
 .base {
-    background: url("../../Images/IMG_1506.jpeg");
+    background: url("../../Images/me.jpg");
     background-position: center;
     background-size: cover;
     width: 100%;
     height: 100vh;
-    text-align: center;
+    overflow: hidden;
     color: white;
-    font-size: xx-large;
+    font-size: large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
+.base p {
+    opacity: 0;
+}
+
+
+.arrow {
+    opacity: 0;
+    color: white;
+    position: relative;
+    font-size: xx-large;
+    top: 73vh;
+    animation: fadeInAnimation ease 3s; 
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
+    animation-delay: 3s;
+}
+
+
+
+
+
+
+
+.base h1{ 
+    animation: fadeInAnimation ease 3s; 
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
+    animation-delay: 0s;
+    position: relative;
+    top: 6%;
+} 
+
+.base p {
+    animation: fadeInAnimation ease 3s; 
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
+    position: relative;
+    top: 3%;
+    animation-delay: 2s;
+}
+@keyframes fadeInAnimation { 
+    0% {
+        opacity: 0;
+    } 
+    100% { 
+        opacity: 1;
+    } 
+} 

@@ -31,6 +31,7 @@ const useStyles = makeStyles((theme) => ({
         },
     },
     appBar: {
+        background: '#fa8072',
         [theme.breakpoints.up('sm')]: {
             //   width: `calc(100% - ${drawerWidth}px)`,
             //   marginLeft: drawerWidth,
@@ -54,6 +55,22 @@ const useStyles = makeStyles((theme) => ({
         flexGrow: 1,
         padding: theme.spacing(3),
     },
+    sideText: {
+        cursor: 'pointer',
+        '&:after': {
+            content: '""',
+            position: 'absolute',
+            bottom: '0',
+            left: '0',
+            height: '0',
+            width: '0%',
+            borderBottom: '2px solid #fa8072',
+            transition: 'width 0.3s ease',
+        },
+        '&:hover:after': {
+            width: '100%',
+        }
+    },
 }));
 
 function ResponsiveDrawer(props) {
@@ -69,19 +86,20 @@ function ResponsiveDrawer(props) {
     const drawer = (
         <div>
             <h1 style={{textAlign:'center'}}>Nick King</h1>
+            <img src={require('../../Images/headshot2.jpeg')} className="headshot"></img>
             <div className={classes.toolbar} />
             <Divider />
             <List>
 
                 <ListItem>
                 <Link className="homeButton" activeClass="active" to="Home" spy={true} smooth={true} duration={1000}>
-                <ListItemText style={{cursor: 'pointer'}} primary="Home" />
+                <ListItemText className={classes.sideText} primary="Home" />
                 </Link>
                 </ListItem>
 
                 <ListItem>
                 <Link className="homeButton" activeClass="active" to="About" spy={true} smooth={true} duration={1000}>
-                <ListItemText style={{cursor: 'pointer'}} primary="About" />
+                <ListItemText className={classes.sideText} primary="About" />
                 </Link>
                 </ListItem>
 
