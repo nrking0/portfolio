@@ -1,13 +1,43 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import { Element } from 'react-scroll';
 import './About.css';
 import SchoolIcon from '@material-ui/icons/School';
 import StarIcon from '@material-ui/icons/Star';
 import LanguageIcon from '@material-ui/icons/Language';
+import Divider from '@material-ui/core/Divider';
+import { makeStyles } from '@material-ui/core/styles';
 
+const useStyles = makeStyles ({
+    divider: {
+        orientation: 'vertical',
+    }
+});
 
 
 const About = (props) => {
+
+    function useWindowSize() {
+        const [windowSize, setWindowSize] = useState({
+            width: undefined,
+            height: undefined,
+        });
+
+        useEffect(() => {
+            function handleResize() {
+                setWindowSize({
+                    width: window.innerWidth,
+                    height: window.innerHeight,
+                });
+            }
+            window.addEventListener("resize", handleResize);
+            handleResize();
+            return () => window.removeEventListener("resize", handleResize);
+        }, []);
+        return windowSize;
+    }
+
+    const size = useWindowSize();
+    const classes = useStyles();
 
     return (
         <Element id="About" name="About">
@@ -29,10 +59,20 @@ const About = (props) => {
                     <SchoolIcon fontSize="large"></SchoolIcon>
                     <h1>Education</h1>
                 </div>
+                {(size.width > 950) ? (
+                    <Divider className={classes.divider} orientation="vertical"></Divider>
+                ):(
+                    <Divider className={classes.divider} orientation="horizontal"></Divider>
+                )}
                 <div className="column2">
                     <StarIcon fontSize="large"></StarIcon>
                     <h1>Awards</h1>
                 </div>
+                {(size.width > 950) ? (
+                    <Divider className={classes.divider} orientation="vertical"></Divider>
+                ):(
+                    <Divider className={classes.divider} orientation="horizontal"></Divider>
+                )}
                 <div className="column3">
                     <LanguageIcon fontSize="large"></LanguageIcon>
                     <h1>Skills</h1>
