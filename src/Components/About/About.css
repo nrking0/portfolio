@@ -3,7 +3,9 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background: rgb(255,255,255);
     /* background: linear-gradient(0deg, rgba(255,255,255,1) 10%, rgba(250,128,114,1) 90%); */
-    background: linear-gradient(0deg, #f1f1f1 0%, rgba(250,128,114,1) 80%);
+    /* background: linear-gradient(0deg, #f1f1f1 0%, rgba(250,128,114,1) 80%); */
+    background: linear-gradient(0deg, #f1f1f1 0%, #4467f3 80%);
+    /* background: #fa8072; */
     overflow: hidden;
 }
 
@@ -23,6 +25,7 @@
 
 .myInfo > div {
     margin: auto;
+    margin-top: 0%;
     width: 33vh;
     padding-top: 5%;
     padding-bottom: 5%;

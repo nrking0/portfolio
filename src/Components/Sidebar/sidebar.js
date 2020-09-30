@@ -33,6 +33,7 @@ const useStyles = makeStyles((theme) => ({
         [theme.breakpoints.up('sm')]: {
             width: drawerWidth,
             flexShrink: 0,
+            
         },
     },
     appBar: {
@@ -107,10 +108,10 @@ function ResponsiveDrawer(props) {
             <h1 style={{ textAlign: 'center' }}>Nick King</h1>
             <img src={require('../../Images/headshot2.jpeg')} className="headshot"></img>
             <div className="icons">
+            <IconButton color="inherit" href="mailto:nrking2@illinois.edu"><MailIcon></MailIcon></IconButton>
             <IconButton color="inherit" target="_blank" href="https://www.github.com/nrking0"><GitHubIcon /></IconButton>
             <IconButton color="inherit" target="_blank" href="https://www.linkedin.com/in/nrking0"><LinkedInIcon /></IconButton>
             <IconButton color="inherit" target="_blank" href="https://drive.google.com/file/d/18VLrsW3GV-BUM4gHT54zX6fXPLGs-8E1/view?usp=sharing"><DescriptionIcon /></IconButton>
-            <IconButton color="inherit" href="mailto:nrking2@illinois.edu"><MailIcon></MailIcon></IconButton>
             </div>
             <div className={classes.toolbar} />
             <Divider />
