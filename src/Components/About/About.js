@@ -5,13 +5,6 @@ import SchoolIcon from '@material-ui/icons/School';
 import StarIcon from '@material-ui/icons/Star';
 import LanguageIcon from '@material-ui/icons/Language';
 import Divider from '@material-ui/core/Divider';
-import { makeStyles } from '@material-ui/core/styles';
-
-const useStyles = makeStyles ({
-    divider: {
-        orientation: 'vertical',
-    }
-});
 
 
 const About = (props) => {
@@ -37,7 +30,6 @@ const About = (props) => {
     }
 
     const size = useWindowSize();
-    const classes = useStyles();
 
     return (
         <Element id="About" name="About">
@@ -58,24 +50,39 @@ const About = (props) => {
                 <div className="column1">
                     <SchoolIcon fontSize="large"></SchoolIcon>
                     <h1>Education</h1>
+                    <h3>University of Illinois at Urbana-Champaign</h3>
+                    <p>August 2020 - Present</p>
+                    <p>GPA: 4.0/4.0</p>
+                    <h3>University High School, Normal Illinois</h3>
+                    <p>August 2016 - May 2020</p>
+                    <p>GPA: 4.0/4.0, Valedictorian, National AP Scholar</p>
                 </div>
-                {(size.width > 950) ? (
-                    <Divider className={classes.divider} orientation="vertical"></Divider>
+                {(size.width > 1200) ? (
+                    <Divider orientation="vertical" flexItem={true}></Divider>
                 ):(
-                    <Divider className={classes.divider} orientation="horizontal"></Divider>
+                    <Divider orientation="horizontal" ></Divider>
                 )}
                 <div className="column2">
                     <StarIcon fontSize="large"></StarIcon>
                     <h1>Awards</h1>
+                    <p>University of Illinois Campus Honors Program Chancellor's Scholar</p>
+                    <p>University of Illinois James Scholar</p>
+                    <p>State Farm Foundations Scholar</p>
+                    <p>National Speech and Debate Association <br/>National 5th Place in Impromptu Spekaing</p>
+                    <p>National Speech and Debate Association Academic All-American</p>
                 </div>
-                {(size.width > 950) ? (
-                    <Divider className={classes.divider} orientation="vertical"></Divider>
+                {(size.width > 1200) ? (
+                    <Divider orientation="vertical" flexItem={true}></Divider>
                 ):(
-                    <Divider className={classes.divider} orientation="horizontal"></Divider>
+                    <Divider orientation="horizontal"></Divider>
                 )}
                 <div className="column3">
                     <LanguageIcon fontSize="large"></LanguageIcon>
                     <h1>Skills</h1>
+                    <h3>Languages</h3>
+                    <p>Spanish, Java, HTML/CSS, SQL, Python, JavaScript, Bash</p>
+                    <h3>Frameworks</h3>
+                    <p>Django, React, Node.js, Express.js, PostgreSQL, Heroku</p>
                 </div>
             </div>
         </Element>
