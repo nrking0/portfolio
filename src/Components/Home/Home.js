@@ -13,7 +13,7 @@ const Home = (props) => {
                 <h1>Hello, I am Nick!</h1>
                 <p>Student and Developer</p>
                 <div className="arrow">
-                    <Link className="arrows" activeClass="active" to="About" spy={true} smooth={true} duration={1000}><ExpandMoreIcon className="arrows" fontSize="large" color="inherit" /></Link>
+                    <Link className="arrows" activeClass="active" to="About" spy={true} smooth={true} duration={1500}><ExpandMoreIcon className="arrows" fontSize="large" color="inherit" /></Link>
                 </div>
             </div>
         </Element>
