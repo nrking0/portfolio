@@ -3,7 +3,7 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background: rgb(255,255,255);
     /* background: linear-gradient(0deg, rgba(255,255,255,1) 10%, rgba(250,128,114,1) 90%); */
-    background: linear-gradient(0deg, #f1f1f1 10%, rgba(250,128,114,1) 90%);
+    background: linear-gradient(0deg, #f1f1f1 0%, rgba(250,128,114,1) 80%);
     overflow: hidden;
 }
 
@@ -36,12 +36,14 @@
     margin: 3%;
     color: white;
     font-size: large;
+    text-shadow: black 0px 0px 1px;
 }
 
 .AboutText h1{
     margin-top: 4%;
     position: relative;
     color: white;
+    text-shadow: black 0px 0px 2px;
 }
 
 @media only screen and (max-width: 950px) {

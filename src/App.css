@@ -1,11 +1,11 @@
 
 
-.test {
+.appContainer {
   margin-left: 280px;
 }
 
 @media only screen and (max-width: 600px) {
-  .test {
+  .appContainer {
     margin-left: 0px;
   }
 }
