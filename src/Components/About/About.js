@@ -10,6 +10,9 @@ const About = (props) => {
             <div className="AboutText">
             <h1>About Me</h1>
             </div>
+            <div className="description">
+                <p>I have always been who has craved trying new things. </p>
+            </div>
         </Element>
     )
 };

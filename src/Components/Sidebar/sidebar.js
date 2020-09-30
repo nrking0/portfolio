@@ -15,10 +15,15 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import Scroll from 'react-scroll'
-import {Link} from 'react-scroll';
+import { Link } from 'react-scroll';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import DescriptionIcon from '@material-ui/icons/Description';
+import MailIcon from '@material-ui/icons/Mail';
 import './Sidebar.css';
 
 const drawerWidth = 280;
+
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -49,7 +54,7 @@ const useStyles = makeStyles((theme) => ({
     toolbar: theme.mixins.toolbar,
     drawerPaper: {
         width: drawerWidth,
-       
+
     },
     content: {
         flexGrow: 1,
@@ -82,8 +87,8 @@ const useStyles = makeStyles((theme) => ({
         },
         '&:hover:before': {
             width: '50%'
-        }
-    },
+        },
+    }
 }));
 
 function ResponsiveDrawer(props) {
@@ -96,42 +101,49 @@ function ResponsiveDrawer(props) {
         setMobileOpen(!mobileOpen);
     };
 
+
     const drawer = (
         <div>
-            <h1 style={{textAlign:'center'}}>Nick King</h1>
+            <h1 style={{ textAlign: 'center' }}>Nick King</h1>
             <img src={require('../../Images/headshot2.jpeg')} className="headshot"></img>
+            <div className="icons">
+            <IconButton color="inherit" target="_blank" href="https://www.github.com/nrking0"><GitHubIcon /></IconButton>
+            <IconButton color="inherit" target="_blank" href="https://www.linkedin.com/in/nrking0"><LinkedInIcon /></IconButton>
+            <IconButton color="inherit" target="_blank" href="https://drive.google.com/file/d/18VLrsW3GV-BUM4gHT54zX6fXPLGs-8E1/view?usp=sharing"><DescriptionIcon /></IconButton>
+            <IconButton color="inherit" href="mailto:nrking2@illinois.edu"><MailIcon></MailIcon></IconButton>
+            </div>
             <div className={classes.toolbar} />
             <Divider />
             <List>
 
                 <ListItem>
-                <Link className="homeButton" activeClass="active" to="Home" spy={true} smooth={true} duration={1000}>
-                <ListItemText className={classes.sideText} primary="Home" />
-                </Link>
+                    <Link className="homeButton" activeClass="active" to="Home" spy={true} smooth={true} duration={1000}>
+                        <ListItemText className={classes.sideText} primary="Home" />
+                    </Link>
                 </ListItem>
 
                 <ListItem>
-                <Link className="homeButton" activeClass="active" to="About" spy={true} smooth={true} duration={1000}>
-                <ListItemText className={classes.sideText} primary="About" />
-                </Link>
+                    <Link className="homeButton" activeClass="active" to="About" spy={true} smooth={true} duration={1000}>
+                        <ListItemText className={classes.sideText} primary="About" />
+                    </Link>
                 </ListItem>
 
                 <ListItem>
-                <Link className="homeButton" activeClass="active" to="About" spy={true} smooth={true} duration={1000}>
-                <ListItemText className={classes.sideText} primary="Projects" />
-                </Link>
+                    <Link className="homeButton" activeClass="active" to="About" spy={true} smooth={true} duration={1000}>
+                        <ListItemText className={classes.sideText} primary="Projects" />
+                    </Link>
                 </ListItem>
 
                 <ListItem>
-                <Link className="homeButton" activeClass="active" to="About" spy={true} smooth={true} duration={1000}>
-                <ListItemText className={classes.sideText} primary="Experience" />
-                </Link>
+                    <Link className="homeButton" activeClass="active" to="About" spy={true} smooth={true} duration={1000}>
+                        <ListItemText className={classes.sideText} primary="Experience" />
+                    </Link>
                 </ListItem>
 
                 <ListItem>
-                <Link className="homeButton" activeClass="active" to="About" spy={true} smooth={true} duration={1000}>
-                <ListItemText className={classes.sideText} primary="Contact" />
-                </Link>
+                    <Link className="homeButton" activeClass="active" to="About" spy={true} smooth={true} duration={1000}>
+                        <ListItemText className={classes.sideText} primary="Contact" />
+                    </Link>
                 </ListItem>
 
             </List>
