@@ -103,7 +103,7 @@ function ResponsiveDrawer(props) {
 
 
     const drawer = (
-        <div>
+        <div className="sidebardiv">
             <h1 style={{ textAlign: 'center' }}>Nick King</h1>
             <img src={require('../../Images/headshot2.jpeg')} className="headshot"></img>
             <div className="icons">
