@@ -5,16 +5,14 @@ import Divider from '@material-ui/core/Divider';
 import Drawer from '@material-ui/core/Drawer';
 import Hidden from '@material-ui/core/Hidden';
 import IconButton from '@material-ui/core/IconButton';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
+// import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import MenuIcon from '@material-ui/icons/Menu';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
-import Scroll from 'react-scroll'
 import { Link } from 'react-scroll';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
@@ -106,7 +104,7 @@ function ResponsiveDrawer(props) {
     const drawer = (
         <div className="sidebardiv">
             <h1 style={{ textAlign: 'center' }}>Nick King</h1>
-            <img src={require('../../Images/headshot2.jpeg')} className="headshot"></img>
+            <img src={require('../../Images/headshot2.jpeg')} className="headshot" alt=""></img>
             <div className="icons">
             <IconButton color="inherit" href="mailto:nrking2@illinois.edu"><MailIcon></MailIcon></IconButton>
             <IconButton color="inherit" target="_blank" href="https://www.github.com/nrking0"><GitHubIcon /></IconButton>

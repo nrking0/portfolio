@@ -14,7 +14,7 @@ const Projects = (props) => {
             <section style={{margin: 'auto', justifyContent: 'center'}}class="main items">
                     <article style={{width: '40vh', marginBottom: '5%'}} class="item">
                         <header>
-                            <a href="https://voteuhigh.herokuapp.com" target="_blank"><img className="voteImage" src={require('../../Images/voteuhigh.png')} alt="" /></a>
+                            <a href="https://voteuhigh.herokuapp.com" target="_blank" rel="noopener noreferrer"><img className="voteImage" src={require('../../Images/voteuhigh.png')} alt="" /></a>
                             <h3>Vote U-High</h3>
                         </header>
                         <p>This is a website I created to run a mock election at my high school. I used Django as the framework for the front and back end and utilized a PostgreSQL database for all of the data. I used a user authentication system to ensure only real students could vote and that they could only vote once.</p>
@@ -24,7 +24,7 @@ const Projects = (props) => {
                 
                     <article style={{width: '40vh', marginBottom: '5%'}} className="item">
                         <header>
-                            <a href="https://studentsmeet.herokuapp.com" target="_blank"><img className="voteImage" src={require('../../Images/studentsmeet.png')} alt="" /></a>
+                            <a href="https://studentsmeet.herokuapp.com" target="_blank" rel="noopener noreferrer"><img className="voteImage" src={require('../../Images/studentsmeet.png')} alt="" /></a>
                             <h3>Students Meet</h3>
                         </header>
                         <p>This is a PERN stack web application I created with Amit Sawhney for the 2020 HackIllinois Hackathon. It uses a custom made algorithm to match students with mentors in common areas. We also designed a custom backend with a PostgreSQL database and Express.js app for communication to store and present the data.</p>
