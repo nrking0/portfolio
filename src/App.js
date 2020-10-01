@@ -3,6 +3,7 @@ import './App.css';
 import Sidebar from './Components/Sidebar/sidebar.js';
 import Home from './Components/Home/Home.js';
 import About from './Components/About/About.js';
+import Projects from './Components/Projects/Projects.js';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <div className="appContainer">
       <Home />
       <About />
+      <Projects />
       </div>
     </div>
   );

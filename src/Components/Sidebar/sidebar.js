@@ -118,19 +118,19 @@ function ResponsiveDrawer(props) {
             <List>
 
                 <ListItem>
-                    <Link className="homeButton" activeClass="active" to="Home" spy={true} smooth={true} duration={1500}>
+                    <Link className="homeButton" activeClass="active" to="Home" spy={true} smooth={true} duration={1200}>
                         <ListItemText className={classes.sideText} primary="Home" />
                     </Link>
                 </ListItem>
 
                 <ListItem>
-                    <Link className="homeButton" activeClass="active" to="About" spy={true} smooth={true} duration={1500}>
+                    <Link className="homeButton" activeClass="active" to="About" spy={true} smooth={true} duration={1200}>
                         <ListItemText className={classes.sideText} primary="About" />
                     </Link>
                 </ListItem>
 
                 <ListItem>
-                    <Link className="homeButton" activeClass="active" to="About" spy={true} smooth={true} duration={1000}>
+                    <Link className="homeButton" activeClass="active" to="Projects" spy={true} smooth={true} duration={1200}>
                         <ListItemText className={classes.sideText} primary="Projects" />
                     </Link>
                 </ListItem>
