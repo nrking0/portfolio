@@ -58,7 +58,7 @@
         border-top-right-radius: 15px;
         margin: -3em 0 3em -3em;
         width: calc(100% + 6em);
-        height: 15em;
+        height: 12em;
         display: -moz-flex;
         display: -webkit-flex;
         display: -ms-flex;
@@ -234,7 +234,7 @@
     }
 
         .item header {
-            height: 14em;
+            height: 12em;
             margin: -2em 0 2em -1em;
             width: calc(100% + 2em);
         }
