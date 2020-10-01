@@ -146,7 +146,7 @@ function ResponsiveDrawer(props) {
                 </ListItem>
 
             </List>
-            <Divider />
+            
         </div>
     );
 
