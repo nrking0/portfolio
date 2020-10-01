@@ -32,7 +32,7 @@ const Projects = (props) => {
 
                     <article style={{width: '40vh', marginBottom: '5%'}} className="item">
                         <header>
-                            <a href="https://studentsmeet.herokuapp.com" target="_blank" rel="noopener noreferrer"><img className="voteImage" src={require('../../Images/hackillinois.png')} alt="" /></a>
+                            <a href="https://nrking0.github.io/HackIllinoisChallenge/" target="_blank" rel="noopener noreferrer"><img className="voteImage" src={require('../../Images/hackillinois.png')} alt="" /></a>
                             <h3>HackIllinois Challenge</h3>
                         </header>
                         <p>This is a project I did for a HackIllinois Front-End Challenge. It is a React Application that takes a JSON from the HackIllinois API and puts it into a scheduler.</p>
