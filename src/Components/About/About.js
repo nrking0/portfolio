@@ -58,7 +58,7 @@ const About = (props) => {
                     <p>August 2016 - May 2020</p>
                     <p>GPA: 4.0/4.0, Valedictorian</p>
                 </div>
-                {(size.width > 1200) ? (
+                {(size.width > 1300) ? (
                     <Divider orientation="vertical" flexItem={true}></Divider>
                 ):(
                     <Divider orientation="horizontal" ></Divider>
@@ -73,7 +73,7 @@ const About = (props) => {
                     <p>National Speech and Debate Association Academic All-American</p>
                     <p>2020 National AP Scholar</p>
                 </div>
-                {(size.width > 1200) ? (
+                {(size.width > 1300) ? (
                     <Divider orientation="vertical" flexItem={true}></Divider>
                 ):(
                     <Divider orientation="horizontal"></Divider>

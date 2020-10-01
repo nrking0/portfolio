@@ -5,6 +5,9 @@
     padding-bottom: 5%;
 }
 
+.pDescrip {
+    margin: 4%;
+}
 
 .projectItemList {
     margin: auto;
@@ -37,11 +40,6 @@
 .voteImage {
     width: 110%;
 }
-
-
-
-
-
 
 
 
@@ -215,7 +213,7 @@
 
 } */
 
-@media screen and (max-width: 736px) {
+/* @media screen and (max-width: 736px) {
 
    
 
@@ -223,7 +221,7 @@
         margin: auto;
     }
 
-}
+} */
 
 @media screen and (max-width: 980px) {
 
