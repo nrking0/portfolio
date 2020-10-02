@@ -41,7 +41,7 @@ const Projects = (props) => {
                         <Button href="https://nrking0.github.io/HackIllinoisChallenge/" variant="contained" color="primary" target="_blank">Visit Site</Button>
                     </article>
             </section>
-            <Button href="https://nrking0.github.io/HackIllinoisChallenge/" variant="contained" color="primary" target="_blank">View Source Code on GitHub</Button>
+            <Button href="https://github.com/nrking0" variant="contained" color="primary" target="_blank">View Source Code on GitHub</Button>
         </Element>
     )
 };
