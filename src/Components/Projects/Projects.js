@@ -18,6 +18,7 @@ const Projects = (props) => {
                             <h3>Vote U-High</h3>
                         </header>
                         <p>This is a website I created to run a mock election at my high school. I used Django as the framework for the front and back end and utilized a PostgreSQL database for all of the data. I used a user authentication system to ensure ensure only real students could vote and that they could only vote once.</p>
+                        
                         <Button href="https://voteuhigh.herokuapp.com" variant="contained" color="primary" target="_blank">Visit Site</Button>
                     </article>
                 

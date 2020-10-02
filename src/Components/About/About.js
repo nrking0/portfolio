@@ -5,6 +5,7 @@ import SchoolIcon from '@material-ui/icons/School';
 import StarIcon from '@material-ui/icons/Star';
 import LanguageIcon from '@material-ui/icons/Language';
 import Divider from '@material-ui/core/Divider';
+import Button from '@material-ui/core/Button';
 
 
 const About = (props) => {
@@ -88,6 +89,7 @@ const About = (props) => {
                     <p>Django, React, Node.js, Express.js, PostgreSQL, Heroku</p>
                 </div>
             </div>
+            <Button style={{marginTop: '4%'}}href="https://drive.google.com/file/d/18VLrsW3GV-BUM4gHT54zX6fXPLGs-8E1/view?usp=sharing" variant="contained" color="primary" target="_blank">Check Out my Full Resume</Button>
         </Element>
     )
 };

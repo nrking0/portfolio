@@ -19,6 +19,7 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import DescriptionIcon from '@material-ui/icons/Description';
 import MailIcon from '@material-ui/icons/Mail';
 import './Sidebar.css';
+import FadeIn from "react-fade-in";
 
 const drawerWidth = 280;
 
@@ -103,6 +104,7 @@ function ResponsiveDrawer(props) {
 
     const drawer = (
         <div className="sidebardiv">
+            <FadeIn>
             <h1 style={{ textAlign: 'center' }}>Nick King</h1>
             <img src={require('../../Images/headshot2.jpeg')} className="headshot" alt=""></img>
             <div className="icons">
@@ -111,8 +113,8 @@ function ResponsiveDrawer(props) {
             <IconButton color="inherit" target="_blank" href="https://www.linkedin.com/in/nrking0"><LinkedInIcon /></IconButton>
             <IconButton color="inherit" target="_blank" href="https://drive.google.com/file/d/18VLrsW3GV-BUM4gHT54zX6fXPLGs-8E1/view?usp=sharing"><DescriptionIcon /></IconButton>
             </div>
-            <div className={classes.toolbar} />
-            <Divider />
+            {/* <div className={classes.toolbar} />
+            <Divider /> */}
             <List>
 
                 <ListItem>
@@ -146,7 +148,8 @@ function ResponsiveDrawer(props) {
                 </ListItem>
 
             </List>
-            
+            </FadeIn>
+        
         </div>
     );
 
@@ -163,7 +166,7 @@ function ResponsiveDrawer(props) {
                         edge="start"
                         onClick={handleDrawerToggle}
                         className={classes.menuButton}
-                    >
+                        >
                         <MenuIcon />
                     </IconButton>
                     <Typography variant="h6" noWrap>
@@ -185,7 +188,7 @@ function ResponsiveDrawer(props) {
                         ModalProps={{
                             keepMounted: true,
                         }}
-                    >
+                        >
                         {drawer}
                     </Drawer>
                 </Hidden>
@@ -196,7 +199,7 @@ function ResponsiveDrawer(props) {
                         }}
                         variant="permanent"
                         open
-                    >
+                        >
                         {drawer}
                     </Drawer>
                 </Hidden>

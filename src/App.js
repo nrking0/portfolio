@@ -4,20 +4,25 @@ import Sidebar from './Components/Sidebar/Sidebar.js';
 import Home from './Components/Home/Home.js';
 import About from './Components/About/About.js';
 import Projects from './Components/Projects/Projects.js';
+import Loading from './Components/Loading/Loading.js';
+import FadeIn from "react-fade-in";
 
 function App() {
   return (
+
     <div className="App">
       <div>
-      <Sidebar />
+        <Sidebar />
       </div>
       <div className="appContainer">
-      <Home />
-      <About />
-      <Projects />
+        <FadeIn>
+          <Home />
+          <About />
+          <Projects />
+        </FadeIn>
       </div>
     </div>
   );
 }
 
-export default App;
+export default Loading(App);
