@@ -2,17 +2,22 @@ import React from 'react';
 import './Projects.css';
 import { Element } from 'react-scroll';
 import Button from '@material-ui/core/Button';
+import Fade from 'react-reveal/Fade';
 
 const Projects = (props) => {
 
     return (
         <Element id="Projects" name="Projects">
+            <Fade bottom cascade>
             <h1>What I Have Worked On</h1>
             <p className="pDescrip">I have worked on a wide variety of projects. My main focus for big projects over the past year has been on web-development. I have utilized multiple frameworks in many different languages. 
             My projects have included front-end and back-end work from myself. Additionally, I am always continuing to find new projects to work on in web-development and in other areas such as information security and machine learning. 
             Here are some of my most recent works!</p>
+            </Fade>
+            
             <section style={{margin: 'auto', justifyContent: 'center'}}class="main items">
-                    <article style={{width: '40vh', marginBottom: '5%'}} class="item">
+                <Fade bottom>
+                    <article style={{width: '40vh', marginBottom: '5%'}} className="item">
                         <header>
                             <a href="https://voteuhigh.herokuapp.com" target="_blank" rel="noopener noreferrer"><img className="voteImage" src={require('../../Images/voteuhigh.png')} alt="" /></a>
                             <h3>Vote U-High</h3>
@@ -21,7 +26,7 @@ const Projects = (props) => {
                         
                         <Button href="https://voteuhigh.herokuapp.com" variant="contained" color="primary" target="_blank">Visit Site</Button>
                     </article>
-                
+                    
                     <article style={{width: '40vh', marginBottom: '5%'}} className="item">
                         <header>
                             <a href="https://studentsmeet.herokuapp.com" target="_blank" rel="noopener noreferrer"><img className="voteImage" src={require('../../Images/studentsmeet.png')} alt="" /></a>
@@ -40,8 +45,11 @@ const Projects = (props) => {
                         <br/><br/><br/>
                         <Button href="https://nrking0.github.io/HackIllinoisChallenge/" variant="contained" color="primary" target="_blank">Visit Site</Button>
                     </article>
+                    </Fade>
             </section>
+            <Fade bottom>
             <Button href="https://github.com/nrking0" variant="contained" color="primary" target="_blank">View Source Code on GitHub</Button>
+            </Fade>
         </Element>
     )
 };
