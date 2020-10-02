@@ -41,7 +41,7 @@ const About = (props) => {
                 </Fade>
                 </div>
                 <div className="description">
-                    <Fade bottom cascade>
+                    <Fade bottom >
                     <p>Ever since I was introduced to computer programming in high school, I have been infatuated with being able to manipulate computers
                     and create new programs. Naturally, I decided to follow that enamoration for computers to the Computer Science department at the University
                     of Illinois at Urbana-Champaign. Being someone who is still deeply committed to interdisciplinary thinking and the liberal arts, I have been able
@@ -95,8 +95,8 @@ const About = (props) => {
                         <p>Django, React, Node.js, Express.js, PostgreSQL, Heroku</p>
                     </div>
                 </div>
-                </Fade>
                 <Button style={{ marginTop: '4%' }} href="https://drive.google.com/file/d/18VLrsW3GV-BUM4gHT54zX6fXPLGs-8E1/view?usp=sharing" variant="contained" color="primary" target="_blank">Check Out my Full Resume</Button>
+                </Fade>
             
         </Element>
     )

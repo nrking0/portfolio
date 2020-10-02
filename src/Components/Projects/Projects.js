@@ -10,6 +10,8 @@ const Projects = (props) => {
         <Element id="Projects" name="Projects">
             <Fade bottom cascade>
             <h1>What I Have Worked On</h1>
+            </Fade>
+            <Fade bottom>
             <p className="pDescrip">I have worked on a wide variety of projects. My main focus for big projects over the past year has been on web-development. I have utilized multiple frameworks in many different languages. 
             My projects have included front-end and back-end work from myself. Additionally, I am always continuing to find new projects to work on in web-development and in other areas such as information security and machine learning. 
             Here are some of my most recent works!</p>
