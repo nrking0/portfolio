@@ -6,6 +6,7 @@ import StarIcon from '@material-ui/icons/Star';
 import LanguageIcon from '@material-ui/icons/Language';
 import Divider from '@material-ui/core/Divider';
 import Button from '@material-ui/core/Button';
+import Fade from 'react-reveal/Fade';
 
 
 const About = (props) => {
@@ -37,6 +38,7 @@ const About = (props) => {
             <div className="AboutText">
                 <h1>About Me</h1>
             </div>
+            <Fade bottom cascade>
             <div className="description">
                 <p>Ever since I was introduced to computer programming in high school, I have been infatuated with being able to manipulate computers
                 and create new programs. Naturally, I decided to follow that enamoration for computers to the Computer Science department at the University
@@ -61,9 +63,9 @@ const About = (props) => {
                 </div>
                 {(size.width > 1300) ? (
                     <Divider orientation="vertical" flexItem={true}></Divider>
-                ):(
-                    <Divider orientation="horizontal" ></Divider>
-                )}
+                    ):(
+                        <Divider orientation="horizontal" ></Divider>
+                        )}
                 <div className="column2">
                     <StarIcon fontSize="large"></StarIcon>
                     <h1>Awards</h1>
@@ -76,9 +78,9 @@ const About = (props) => {
                 </div>
                 {(size.width > 1300) ? (
                     <Divider orientation="vertical" flexItem={true}></Divider>
-                ):(
-                    <Divider orientation="horizontal"></Divider>
-                )}
+                    ):(
+                        <Divider orientation="horizontal"></Divider>
+                        )}
                 <div className="column3">
                     <LanguageIcon fontSize="large"></LanguageIcon>
                     <h1>Skills</h1>
@@ -90,6 +92,7 @@ const About = (props) => {
                 </div>
             </div>
             <Button style={{marginTop: '4%'}}href="https://drive.google.com/file/d/18VLrsW3GV-BUM4gHT54zX6fXPLGs-8E1/view?usp=sharing" variant="contained" color="primary" target="_blank">Check Out my Full Resume</Button>
+                        </Fade>
         </Element>
     )
 };
