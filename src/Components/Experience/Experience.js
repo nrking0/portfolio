@@ -8,7 +8,7 @@ const Experience = (props) => {
     return (
         <Element id="Experience">
             <Fade bottom cascade>
-                <h1>What I have Done</h1>
+                <h1>What I Have Done</h1>
             </Fade>
         </Element>
     )
