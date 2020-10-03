@@ -5,6 +5,7 @@ import Home from './Components/Home/Home.js';
 import About from './Components/About/About.js';
 import Projects from './Components/Projects/Projects.js';
 import Loading from './Components/Loading/Loading.js';
+import Experience from './Components/Experience/Experience.js';
 import FadeIn from "react-fade-in";
 
 function App() {
@@ -17,9 +18,10 @@ function App() {
       <div className="appContainer">
         <FadeIn>
           <Home />
+          </FadeIn>
           <About />
           <Projects />
-        </FadeIn>
+          <Experience />
       </div>
     </div>
   );
