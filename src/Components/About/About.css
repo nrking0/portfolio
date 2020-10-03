@@ -47,7 +47,7 @@
     text-shadow: black 0px 0px 2px;
 }
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1100px) {
     .myInfo {
         flex-direction: column;
     }
