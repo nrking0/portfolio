@@ -111,7 +111,7 @@ function ResponsiveDrawer(props) {
             <IconButton color="inherit" href="mailto:nrking2@illinois.edu"><MailIcon></MailIcon></IconButton>
             <IconButton color="inherit" target="_blank" href="https://www.github.com/nrking0"><GitHubIcon /></IconButton>
             <IconButton color="inherit" target="_blank" href="https://www.linkedin.com/in/nrking0"><LinkedInIcon /></IconButton>
-            <IconButton color="inherit" target="_blank" href="https://drive.google.com/file/d/18VLrsW3GV-BUM4gHT54zX6fXPLGs-8E1/view?usp=sharing"><DescriptionIcon /></IconButton>
+            <IconButton color="inherit" target="_blank" href="https://drive.google.com/file/d/1h-_Cyr-2XN5fG3cLumn2LnZv29spkaSb/view?usp=sharing"><DescriptionIcon /></IconButton>
             </div>
             {/* <div className={classes.toolbar} />
             <Divider /> */}

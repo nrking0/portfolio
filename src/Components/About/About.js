@@ -95,7 +95,7 @@ const About = (props) => {
                         <p>Django, React, Node.js, Express.js, PostgreSQL, Heroku</p>
                     </div>
                 </div>
-                <Button style={{ marginTop: '4%' }} href="https://drive.google.com/file/d/18VLrsW3GV-BUM4gHT54zX6fXPLGs-8E1/view?usp=sharing" variant="contained" color="primary" target="_blank">Check Out my Full Resume</Button>
+                <Button style={{ marginTop: '4%' }} href="https://drive.google.com/file/d/1h-_Cyr-2XN5fG3cLumn2LnZv29spkaSb/view?usp=sharing" variant="contained" color="primary" target="_blank">Check Out my Full Resume</Button>
                 </Fade>
             
         </Element>

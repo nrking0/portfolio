@@ -33,7 +33,7 @@ const Contact = (props) => {
                 <Button href="mailto:nrking2@illinois.edu" variant="contained" color="secondary" className={classes.button} startIcon={<MailIcon />}>E-Mail</Button>
                 <Button href="https://www.linkedin.com/in/nrking0" target="_blank" variant="contained" color="secondary" className={classes.button} startIcon={<LinkedInIcon />}>LinkedIn</Button>
                 <Button href="https://github.com/nrking0" target="_blank" variant="contained" color="secondary" className={classes.button} startIcon={<GitHubIcon />}>GitHub</Button>
-                <Button href="https://drive.google.com/file/d/18VLrsW3GV-BUM4gHT54zX6fXPLGs-8E1/view?usp=sharing" target="_blank" variant="contained" color="secondary" className={classes.button} startIcon={<DescriptionIcon />}>Resume</Button>
+                <Button href="https://drive.google.com/file/d/1h-_Cyr-2XN5fG3cLumn2LnZv29spkaSb/view?usp=sharing" target="_blank" variant="contained" color="secondary" className={classes.button} startIcon={<DescriptionIcon />}>Resume</Button>
             </div> 
                 </Fade>
         </Element>
