@@ -58,7 +58,7 @@ const Experience = (props) => {
                             </AccordionDetails>
                         </Accordion>
                         <Accordion>
-                            <AccordionSummary expandIcon={<MdExpandMore />}>University High School Speech Team</AccordionSummary>
+                            <AccordionSummary expandIcon={<MdExpandMore />}>University High School Student Senate</AccordionSummary>
                             <AccordionDetails style={{ display: 'flex', flexDirection: 'column' }}>
                                 <h4>Student Body Vice President<br />August 2016 - May 2020</h4>
                                 <p>Throughout all four years in high school I was elected to my school's Student Senate. In my senior year I was elected as Student Body Vice President. I organized many events
@@ -67,7 +67,7 @@ const Experience = (props) => {
                             </AccordionDetails>
                         </Accordion>
                         <Accordion>
-                            <AccordionSummary expandIcon={<MdExpandMore />}>University High School Student Senate</AccordionSummary>
+                            <AccordionSummary expandIcon={<MdExpandMore />}>University High School Speech Team</AccordionSummary>
                             <AccordionDetails style={{ display: 'flex', flexDirection: 'column' }}>
                                 <h4>Captain<br />August 2016 - May 2020</h4>
                                 <p>As a member of the Speech team I competed mainly in impromptu and extemporaneous speaking. I competed across the national circuit where I performed in a national final,
