@@ -15,8 +15,8 @@ const Experience = (props) => {
             <Fade bottom>
                 <div className="experienceMain">
                     <div className="descrip">
-                        <h4>Throughout my time in high school, and now in college, I have participated in a wide variety of extra-cutticulars, volunteering, and work experiences. I always 
-                            have loved trying new things, and that mantra has followed through to many of my extra-curriculars. While I do have a strong foundation with activities in Computer 
+                        <h4>Throughout my time in high school, and now in college, I have participated in a wide variety of extracurriculars, volunteering, and work experiences. I always 
+                            have loved trying new things, and that mantra has followed through to many of my extracurriculars. While I do have a strong foundation with activities in Computer 
                             Science, I have always loved having experiences in a wide variety of disciplines. Whether it is working on a new project or serving ice cream, I always put my all 
                             into whatever I do!</h4>
                     </div>
@@ -34,9 +34,9 @@ const Experience = (props) => {
                         <Accordion>
                             <AccordionSummary expandIcon={<MdExpandMore />}>Marching Illini</AccordionSummary>
                             <AccordionDetails style={{ display: 'flex', flexDirection: 'column' }}>
-                                <h4>Trumpet Section Memeber<br />August 2020 – Present</h4>
-                                <p>In the Summer of 2020 I auditioned for, and eventually was accepted into, the Marching Illini. While our season looks a little differennt due to COVID-19, we still have many
-                                responsibilities. We learn a large repetoire, which we would normally play at each football game. Beyond that, we work on marching fundamentals, leadership development, and
+                                <h4>Trumpet Section Member<br />August 2020 – Present</h4>
+                                <p>In the Summer of 2020 I auditioned for, and eventually was accepted into, the Marching Illini. While our season looks a little different due to COVID-19, we still have many
+                                responsibilities. We learn a large repertoire, which we would normally play at each football game. Beyond that, we work on marching fundamentals, leadership development, and
                                 simply bonding more as a band.</p>
                             </AccordionDetails>
                         </Accordion>
