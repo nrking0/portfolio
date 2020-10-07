@@ -76,7 +76,7 @@ const About = (props) => {
                         <p>University of Illinois Campus Honors Program Chancellor's Scholar</p>
                         <p>University of Illinois James Scholar</p>
                         <p>State Farm Foundations Scholar</p>
-                        <p>National Speech and Debate Association <br />National 5th Place in Impromptu Spekaing</p>
+                        <p>National Speech and Debate Association <br />National 5th Place in Impromptu Speaking</p>
                         <p>National Speech and Debate Association Academic All-American</p>
                         <p>2020 National AP Scholar</p>
                     </div>
