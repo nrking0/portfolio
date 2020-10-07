@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.d6a963be.chunk.css",
+    "main.js": "/portfolio/static/js/main.57a90b2a.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.57a90b2a.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.209c2d7e.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.209c2d7e.js.map",
+    "static/js/2.ab9cc80c.chunk.js": "/portfolio/static/js/2.ab9cc80c.chunk.js",
+    "static/js/2.ab9cc80c.chunk.js.map": "/portfolio/static/js/2.ab9cc80c.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "precache-manifest.a1af42846b74c3cbc931533fae53377c.js": "/portfolio/precache-manifest.a1af42846b74c3cbc931533fae53377c.js",
+    "service-worker.js": "/portfolio/service-worker.js",
+    "static/css/main.d6a963be.chunk.css.map": "/portfolio/static/css/main.d6a963be.chunk.css.map",
+    "static/js/2.ab9cc80c.chunk.js.LICENSE.txt": "/portfolio/static/js/2.ab9cc80c.chunk.js.LICENSE.txt",
+    "static/media/hackillinois.png": "/portfolio/static/media/hackillinois.8a00e04a.png",
+    "static/media/headshot2.jpeg": "/portfolio/static/media/headshot2.965279ce.jpeg",
+    "static/media/Home.css": "/portfolio/static/media/me.b7f0b9e7.jpg",
+    "static/media/studentsmeet.png": "/portfolio/static/media/studentsmeet.e2db5eff.png",
+    "static/media/voteuhigh.png": "/portfolio/static/media/voteuhigh.9bd77688.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.209c2d7e.js",
+    "static/js/2.ab9cc80c.chunk.js",
+    "static/css/main.d6a963be.chunk.css",
+    "static/js/main.57a90b2a.chunk.js"
+  ]
+}
