@@ -8,8 +8,12 @@ import Loading from './Components/Loading/Loading.js';
 import Experience from './Components/Experience/Experience.js';
 import FadeIn from "react-fade-in";
 import Contact from './Components/Contact/Contact.js';
+import {PageView, initGA} from './Components/Tracking/index.js';
+
 
 function App() {
+  initGA('UA-180161846-1');
+  PageView();
   return (
 
     <div className="App">
@@ -24,7 +28,7 @@ function App() {
           <Projects />
           <Experience />
           <Contact />
-
+        
       </div>
     </div>
   );

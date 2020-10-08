@@ -7,6 +7,8 @@ import LanguageIcon from '@material-ui/icons/Language';
 import Divider from '@material-ui/core/Divider';
 import Button from '@material-ui/core/Button';
 import Fade from 'react-reveal/Fade';
+import {Event} from '../Tracking';
+
 
 
 const About = (props) => {
@@ -95,7 +97,7 @@ const About = (props) => {
                         <p>Django, React, Node.js, Express.js, PostgreSQL, Heroku</p>
                     </div>
                 </div>
-                <Button style={{ marginTop: '4%' }} href="https://drive.google.com/file/d/1h-_Cyr-2XN5fG3cLumn2LnZv29spkaSb/view?usp=sharing" variant="contained" color="primary" target="_blank">Check Out my Full Resume</Button>
+                <Button style={{ marginTop: '4%' }} href="https://drive.google.com/file/d/1h-_Cyr-2XN5fG3cLumn2LnZv29spkaSb/view?usp=sharing" variant="contained" color="primary" target="_blank" onClick={()=> Event({category: "Information", action: "Viewed Resume", label: "Resume About Section"})}>Check Out my Full Resume</Button>
                 </Fade>
             
         </Element>

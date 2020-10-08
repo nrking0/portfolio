@@ -7,6 +7,7 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import DescriptionIcon from '@material-ui/icons/Description';
 import MailIcon from '@material-ui/icons/Mail';
+import {Event} from '../Tracking';
 
 
 import { makeStyles } from '@material-ui/core/styles';
@@ -30,10 +31,10 @@ const Contact = (props) => {
             </Fade>  
                 <Fade cascade bottom>
             <div className = "buttons">
-                <Button href="mailto:nrking2@illinois.edu" variant="contained" color="secondary" className={classes.button} startIcon={<MailIcon />}>E-Mail</Button>
-                <Button href="https://www.linkedin.com/in/nrking0" target="_blank" variant="contained" color="secondary" className={classes.button} startIcon={<LinkedInIcon />}>LinkedIn</Button>
-                <Button href="https://github.com/nrking0" target="_blank" variant="contained" color="secondary" className={classes.button} startIcon={<GitHubIcon />}>GitHub</Button>
-                <Button href="https://drive.google.com/file/d/1h-_Cyr-2XN5fG3cLumn2LnZv29spkaSb/view?usp=sharing" target="_blank" variant="contained" color="secondary" className={classes.button} startIcon={<DescriptionIcon />}>Resume</Button>
+                <Button href="mailto:nrking2@illinois.edu" variant="contained" color="secondary" className={classes.button} startIcon={<MailIcon />} onClick={()=> Event({category: "Information", action: "Viewed Email", label: "Email Contact Section"})}>E-Mail</Button>
+                <Button href="https://www.linkedin.com/in/nrking0" target="_blank" variant="contained" color="secondary" className={classes.button} startIcon={<LinkedInIcon />} onClick={()=> Event({category: "Information", action: "Viewed LinkedIn", label: "LinkedIn Contact Section"})}>LinkedIn</Button>
+                <Button href="https://github.com/nrking0" target="_blank" variant="contained" color="secondary" className={classes.button} startIcon={<GitHubIcon />} onClick={()=> Event({category: "Information", action: "Viewed GitHub", label: "GitHub Contact Section"})}>GitHub</Button>
+                <Button href="https://drive.google.com/file/d/1h-_Cyr-2XN5fG3cLumn2LnZv29spkaSb/view?usp=sharing" target="_blank" variant="contained" color="secondary" className={classes.button} startIcon={<DescriptionIcon />} onClick={()=> Event({category: "Information", action: "Viewed Resume", label: "Resume Contact Section"})}>Resume</Button>
             </div> 
                 </Fade>
         </Element>

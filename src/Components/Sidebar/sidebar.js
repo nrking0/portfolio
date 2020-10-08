@@ -20,6 +20,7 @@ import DescriptionIcon from '@material-ui/icons/Description';
 import MailIcon from '@material-ui/icons/Mail';
 import './Sidebar.css';
 import FadeIn from "react-fade-in";
+import ReactGA from 'react-ga';
 
 const drawerWidth = 280;
 
@@ -108,10 +109,10 @@ function ResponsiveDrawer(props) {
             <h1 style={{ textAlign: 'center' }}>Nick King</h1>
             <img src={require('../../Images/headshot2.jpeg')} className="headshot" alt=""></img>
             <div className="icons">
-            <IconButton color="inherit" href="mailto:nrking2@illinois.edu"><MailIcon></MailIcon></IconButton>
-            <IconButton color="inherit" target="_blank" href="https://www.github.com/nrking0"><GitHubIcon /></IconButton>
-            <IconButton color="inherit" target="_blank" href="https://www.linkedin.com/in/nrking0"><LinkedInIcon /></IconButton>
-            <IconButton color="inherit" target="_blank" href="https://drive.google.com/file/d/1h-_Cyr-2XN5fG3cLumn2LnZv29spkaSb/view?usp=sharing"><DescriptionIcon /></IconButton>
+            <IconButton color="inherit" href="mailto:nrking2@illinois.edu" onClick={()=> ReactGA.event({category: "Information", action: "Viewed Email", label: "Email Sidebar"})}><MailIcon></MailIcon></IconButton>
+            <IconButton color="inherit" target="_blank" href="https://www.github.com/nrking0" onClick={()=> ReactGA.event({category: "Information", action: "Viewed GitHub", label: "Github Sidebar"})}><GitHubIcon /></IconButton>
+            <IconButton color="inherit" target="_blank" href="https://www.linkedin.com/in/nrking0" onClick={()=> ReactGA.event({category: "Information", action: "Viewed LinkedIn", label: "LinkedIn Sidebar"})}><LinkedInIcon /></IconButton>
+            <IconButton color="inherit" target="_blank" href="https://drive.google.com/file/d/1h-_Cyr-2XN5fG3cLumn2LnZv29spkaSb/view?usp=sharing" onClick={()=> ReactGA.event({category: "Information", action: "Viewed resume", label: "Resume Sidebar"})}><DescriptionIcon /></IconButton>
             </div>
             {/* <div className={classes.toolbar} />
             <Divider /> */}
