@@ -12,7 +12,6 @@ import ReactGA from 'react-ga';
 
 
 function App() {
-  require('dotenv').config()
   ReactGA.initialize('UA-180161846-1');
   ReactGA.pageview('/Home');
   return (
