@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './App.css';
 import Sidebar from './Components/Sidebar/sidebar.js';
 import Home from './Components/Home/Home.js';
@@ -12,8 +12,11 @@ import ReactGA from 'react-ga';
 
 
 function App() {
-  ReactGA.initialize('UA-180161846-1');
-  ReactGA.pageview('/Home');
+  useEffect(() => {
+    ReactGA.initialize('UA-180161846-1');
+    ReactGA.pageview('/Home');
+    // eslint-disable-next-line
+  }, []);
   return (
 
     <div className="App">
