@@ -8,12 +8,13 @@ import Loading from './Components/Loading/Loading.js';
 import Experience from './Components/Experience/Experience.js';
 import FadeIn from "react-fade-in";
 import Contact from './Components/Contact/Contact.js';
-import {PageView, initGA} from './Components/Tracking/index.js';
+import ReactGA from 'react-ga';
 
 
 function App() {
-  initGA('UA-180161846-1');
-  PageView();
+  require('dotenv').config()
+  ReactGA.initialize('UA-180161846-1');
+  ReactGA.pageview('/Home');
   return (
 
     <div className="App">
