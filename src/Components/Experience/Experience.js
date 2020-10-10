@@ -52,7 +52,7 @@ const Experience = (props) => {
                             <AccordionSummary expandIcon={<MdExpandMore />}>Gene's Ice Cream</AccordionSummary>
                             <AccordionDetails style={{ display: 'flex', flexDirection: 'column' }}>
                                 <h4>Shift Lead<br />March 2018 – August 2020</h4>
-                                <p>Over the past three years, I worked at an ice cream shop while I was in high school. I worked across roles in the stores, while maintaining an important focus on customer
+                                <p>Over the past three years, I worked at an ice cream shop while I was in high school. I worked across all roles in the stores, while maintaining an important focus on customer
                                 service. I eventually moved towards a leadership role, where I have helped manage shifts and lead different tasks during our work. I have counted the cash in the drawers
                                 at the end shifts, and I helped look into new items that we could sell at the store.</p>
                             </AccordionDetails>
