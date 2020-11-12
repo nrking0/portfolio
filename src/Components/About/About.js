@@ -50,7 +50,7 @@ const About = (props) => {
                     to cross apply the concepts of computer science to the rest of the world through my major of Mathematics and Computer Science. Whether it is examining
                 mathematical proofs or using my coursework in economics to write predictive algorithms, I can help bring in concepts of computer science to a wide variety of disciplines.</p>
                     <br />
-                    <p>I have lots of experience in front-end and back-end web-development, and I have worked in areas from basic computers programs all the way to modern information security.
+                    <p>I have lots of experience in full stack web-development, and I have worked in areas from basic computers programs all the way to modern information security.
                 I am a great communicator and have lots of leadership experience. I would love for you to get to know me more!</p>
                 </Fade>
                 </div>
