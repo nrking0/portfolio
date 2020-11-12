@@ -92,9 +92,9 @@ const About = (props) => {
                         <h1>Skills</h1>
                         <p>Communicative, Leadership, Growth-Mindset, Emotional Intelligence, Collaborative</p>
                         <h3>Languages</h3>
-                        <p>Spanish, Java, HTML/CSS, SQL, Python, JavaScript, Bash</p>
+                        <p>Spanish, Java, HTML/CSS, SQL, Python, JavaScript, Bash, Dart</p>
                         <h3>Frameworks</h3>
-                        <p>Django, React, Node.js, Express.js, PostgreSQL, Heroku</p>
+                        <p>Django, React, Node.js, Express.js, PostgreSQL, Heroku, Flutter</p>
                     </div>
                 </div>
                 <Button style={{ marginTop: '4%' }} href="https://drive.google.com/file/d/1h-_Cyr-2XN5fG3cLumn2LnZv29spkaSb/view?usp=sharing" variant="contained" color="primary" target="_blank" onClick={()=> ReactGA.event({category: "Information", action: "Viewed Resume", label: "Resume About Section"})}>Check Out my Full Resume</Button>
