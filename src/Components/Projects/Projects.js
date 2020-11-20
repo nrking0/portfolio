@@ -35,7 +35,7 @@ const Projects = (props) => {
                             <a href="https://studentsmeet.herokuapp.com" target="_blank" rel="noopener noreferrer" onClick={()=> ReactGA.event({category: "Projects", action: "Viewed StudentsMeet", label: "StudentsMeet"})}><img className="voteImage" src={require('../../Images/studentsmeet.png')} alt="" /></a>
                             <h3>Students Meet</h3>
                         </header>
-                        <p>This is a PERN stack web application I created with Amit Sawhney for the 2020 HackIllinois Hackathon. It uses a custom made algorithm to match students with mentors in common areas. We also designed a custom backend with a PostgreSQL database and Express.js app for communication to store and present the data.</p>
+                        <p>This is a PERN stack web application I created with a team for the 2020 HackIllinois Hackathon. It uses a custom made algorithm to match students with mentors in common areas. We also designed a custom backend with a PostgreSQL database and Express.js app for communication to store and present the data.</p>
                         <Button href="https://studentsmeet.herokuapp.com" variant="contained" color="primary" target="_blank" onClick={()=> ReactGA.event({category: "Projects", action: "Viewed StudentsMeet", label: "StudentsMeet"})}>Visit Site</Button>
                     </article>
 
