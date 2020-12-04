@@ -1,32 +1,77 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './Experience.css';
 import Fade from 'react-reveal/Fade';
 import { Element } from 'react-scroll';
 import { MdExpandMore } from 'react-icons/md';
-import { Accordion, AccordionSummary, AccordionDetails, withStyles } from '@material-ui/core';
+import { Accordion, AccordionSummary, AccordionDetails, withStyles, Button } from '@material-ui/core';
 
 
 const MuiAccordionSummary = withStyles({
     content: {
-      justifyContent: 'center'
+        justifyContent: 'center'
     }
-  })(AccordionSummary);
+})(AccordionSummary);
+
+
+
 
 const Experience = (props) => {
+    useEffect(() => {
+    
+        setTimeout(()=>{
+            setSection(props.section)
+        }, 10000)
+    
+      }, [props.section])
+
+    const [section, setSection] = useState("");
 
     return (
         <Element id="Experience">
             <Fade bottom cascade>
                 <h1>What I Have Done</h1>
+                <div className="descrip">
+                    <h4>Throughout my time in high school, and now in college, I have participated in a wide variety of extracurriculars, volunteering, and work experiences. I always
+                    have loved trying new things, and that mantra has followed through to many of my extracurriculars. While I do have a strong foundation with activities in Computer
+                    Science, I have always loved having experiences in a wide variety of disciplines. Whether it is working on a new project or serving ice cream, I always put my all
+                            into whatever I do!</h4>
+                </div>
             </Fade>
             <Fade bottom>
-                <div className="experienceMain">
-                    <div className="descrip">
-                        <h4>Throughout my time in high school, and now in college, I have participated in a wide variety of extracurriculars, volunteering, and work experiences. I always 
-                            have loved trying new things, and that mantra has followed through to many of my extracurriculars. While I do have a strong foundation with activities in Computer 
-                            Science, I have always loved having experiences in a wide variety of disciplines. Whether it is working on a new project or serving ice cream, I always put my all 
-                            into whatever I do!</h4>
+                {section === "Work" ? (
+                    <div className="toggleBar">
+                        <Button style={{ margin: '1%' }} variant="contained" color="secondary" onClick={() => { setSection("Work") }}>Work Experience</Button>
+                        <Button style={{ margin: '1%' }} variant="outlined" color="secondary" onClick={() => { setSection("Curriculars") }}>Extra-Curriculars</Button>
+                        <Button style={{ margin: '1%' }} variant="outlined" color="secondary" onClick={() => { setSection("Volunteer") }}>Volunteering</Button>
                     </div>
+                ) : (
+                        <>
+                            {section === "Curriculars" ? (
+                                <div className="toggleBar">
+                                    <Button style={{ margin: '1%' }} variant="outlined" color="secondary" onClick={() => { setSection("Work") }}>Work Experience</Button>
+                                    <Button style={{ margin: '1%' }} variant="contained" color="secondary" onClick={() => { setSection("Curriculars") }}>Extra-Curriculars</Button>
+                                    <Button style={{ margin: '1%' }} variant="outlined" color="secondary" onClick={() => { setSection("Volunteer") }}>Volunteering</Button>
+                                </div>
+                            ) : (
+                                    <>
+                                        {section === "Volunteer" ? (
+                                            <div className="toggleBar">
+                                                <Button style={{ margin: '1%' }} variant="outlined" color="secondary" onClick={() => { setSection("Work") }}>Work Experience</Button>
+                                                <Button style={{ margin: '1%' }} variant="outlined" color="secondary" onClick={() => { setSection("Curriculars") }}>Extra-Curriculars</Button>
+                                                <Button style={{ margin: '1%' }} variant="contained" color="secondary" onClick={() => { setSection("Volunteer") }}>Volunteering</Button>
+                                            </div>
+                                        ) : (
+                                                <div className="toggleBar">
+                                                    <Button style={{ margin: '1%' }} variant="outlined" color="secondary" onClick={() => { setSection("Work") }}>Work Experience</Button>
+                                                    <Button style={{ margin: '1%' }} variant="outlined" color="secondary" onClick={() => { setSection("Curriculars") }}>Extra-Curriculars</Button>
+                                                    <Button style={{ margin: '1%' }} variant="outlined" color="secondary" onClick={() => { setSection("Volunteer") }}>Volunteering</Button>
+                                                </div>
+                                            )}
+                                    </>
+                                )}
+                        </>
+                    )}
+                <div className="experienceMain">
                     <div className="accordion">
                         <Accordion>
                             <MuiAccordionSummary expandIcon={<MdExpandMore />}>Association for Computing Machinery</MuiAccordionSummary>
