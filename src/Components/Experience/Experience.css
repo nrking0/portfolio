@@ -26,6 +26,11 @@
     flex-flow: row wrap;
 }
 
+.slideshow {
+    margin: auto;
+    width: 40%;
+}
+
 
 .experienceMain {
     padding-top: 4%;
@@ -45,7 +50,7 @@
         width: 80%;
     }
 
-    .descrip {
+    .slideshow {
         width: 80%;
     }
 }

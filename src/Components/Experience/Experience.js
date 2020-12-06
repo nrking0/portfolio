@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-//import Slideshow from './Slideshow.js';
+import Slideshow from './Slideshow.js';
 import './Experience.css';
 import Fade from 'react-reveal/Fade';
 import { Element } from 'react-scroll';
@@ -18,12 +18,12 @@ const MuiAccordionSummary = withStyles({
 
 const Experience = (props) => {
     useEffect(() => {
-    
-        setTimeout(()=>{
+
+        setTimeout(() => {
             setSection(props.section)
         }, 10000)
-    
-      }, [props.section])
+
+    }, [props.section])
 
     const [section, setSection] = useState("");
 
@@ -73,6 +73,9 @@ const Experience = (props) => {
                         </>
                     )}
                 <div className="experienceMain">
+                    <div className="slideshow">
+                        <Slideshow></Slideshow>
+                    </div>
                     <div className="accordion">
                         <Accordion>
                             <MuiAccordionSummary expandIcon={<MdExpandMore />}>Association for Computing Machinery</MuiAccordionSummary>
