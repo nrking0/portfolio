@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+//import Slideshow from './Slideshow.js';
 import './Experience.css';
 import Fade from 'react-reveal/Fade';
 import { Element } from 'react-scroll';
