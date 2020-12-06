@@ -1,4 +1,5 @@
 import React, { useState, useEffect} from 'react';
+import './Slideshow.css';
 import Fade from 'react-reveal/Fade';
 
 
@@ -20,7 +21,7 @@ const Slideshow = (props) => {
 
 
     return(
-        <h1>{image}</h1>
+        <></>
     );
 };
 
