@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './Loading.css';
-import * as legoData from "../../Images/profile.json";
+import * as animation from "../../Images/profile.json";
 import Lottie from "react-lottie";
 
 
@@ -10,7 +10,7 @@ import Lottie from "react-lottie";
 const defaultOptions = {
     loop: false,
     autoplay: true,
-    animationData: legoData.default,
+    animationData: animation.default,
     rendererSettings: {
         preserveAspectRatio: "xMidYMid slice"
     }
