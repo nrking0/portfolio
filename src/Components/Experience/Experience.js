@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Slideshow from './Slideshow.js';
 import './Experience.css';
 import Fade from 'react-reveal/Fade';
@@ -17,13 +17,12 @@ const MuiAccordionSummary = withStyles({
 
 
 const Experience = (props) => {
-    useEffect(() => {
 
+    function handleClick(s){
         setTimeout(() => {
-            setSection(props.section)
-        }, 10000)
-
-    }, [props.section])
+            setSection(s)
+        }, 190)
+    };
 
     const [section, setSection] = useState("");
 
@@ -41,31 +40,31 @@ const Experience = (props) => {
             <Fade bottom>
                 {section === "Work" ? (
                     <div className="toggleBar">
-                        <Button style={{ margin: '1%' }} variant="contained" color="secondary" onClick={() => { setSection("Work") }}>Work Experience</Button>
-                        <Button style={{ margin: '1%' }} variant="outlined" color="secondary" onClick={() => { setSection("Curriculars") }}>Extra-Curriculars</Button>
-                        <Button style={{ margin: '1%' }} variant="outlined" color="secondary" onClick={() => { setSection("Volunteer") }}>Volunteering</Button>
+                        <Button style={{ margin: '1%' }} variant="contained" color="secondary" onClick={() => { handleClick("Work") }}>Work Experience</Button>
+                        <Button style={{ margin: '1%' }} variant="outlined" color="secondary" onClick={() => { handleClick("Curriculars") }}>Extra-Curriculars</Button>
+                        <Button style={{ margin: '1%' }} variant="outlined" color="secondary" onClick={() => { handleClick("Volunteer") }}>Volunteering</Button>
                     </div>
                 ) : (
                         <>
                             {section === "Curriculars" ? (
                                 <div className="toggleBar">
-                                    <Button style={{ margin: '1%' }} variant="outlined" color="secondary" onClick={() => { setSection("Work") }}>Work Experience</Button>
-                                    <Button style={{ margin: '1%' }} variant="contained" color="secondary" onClick={() => { setSection("Curriculars") }}>Extra-Curriculars</Button>
-                                    <Button style={{ margin: '1%' }} variant="outlined" color="secondary" onClick={() => { setSection("Volunteer") }}>Volunteering</Button>
+                                    <Button style={{ margin: '1%' }} variant="outlined" color="secondary" onClick={() => { handleClick("Work") }}>Work Experience</Button>
+                                    <Button style={{ margin: '1%' }} variant="contained" color="secondary" onClick={() => { handleClick("Curriculars") }}>Extra-Curriculars</Button>
+                                    <Button style={{ margin: '1%' }} variant="outlined" color="secondary" onClick={() => { handleClick("Volunteer") }}>Volunteering</Button>
                                 </div>
                             ) : (
                                     <>
                                         {section === "Volunteer" ? (
                                             <div className="toggleBar">
-                                                <Button style={{ margin: '1%' }} variant="outlined" color="secondary" onClick={() => { setSection("Work") }}>Work Experience</Button>
-                                                <Button style={{ margin: '1%' }} variant="outlined" color="secondary" onClick={() => { setSection("Curriculars") }}>Extra-Curriculars</Button>
-                                                <Button style={{ margin: '1%' }} variant="contained" color="secondary" onClick={() => { setSection("Volunteer") }}>Volunteering</Button>
+                                                <Button style={{ margin: '1%' }} variant="outlined" color="secondary" onClick={() => { handleClick("Work") }}>Work Experience</Button>
+                                                <Button style={{ margin: '1%' }} variant="outlined" color="secondary" onClick={() => { handleClick("Curriculars") }}>Extra-Curriculars</Button>
+                                                <Button style={{ margin: '1%' }} variant="contained" color="secondary" onClick={() => { handleClick("Volunteer") }}>Volunteering</Button>
                                             </div>
                                         ) : (
                                                 <div className="toggleBar">
-                                                    <Button style={{ margin: '1%' }} variant="outlined" color="secondary" onClick={() => { setSection("Work") }}>Work Experience</Button>
-                                                    <Button style={{ margin: '1%' }} variant="outlined" color="secondary" onClick={() => { setSection("Curriculars") }}>Extra-Curriculars</Button>
-                                                    <Button style={{ margin: '1%' }} variant="outlined" color="secondary" onClick={() => { setSection("Volunteer") }}>Volunteering</Button>
+                                                    <Button style={{ margin: '1%' }} variant="outlined" color="secondary" onClick={() => { handleClick("Work") }}>Work Experience</Button>
+                                                    <Button style={{ margin: '1%' }} variant="outlined" color="secondary" onClick={() => { handleClick("Curriculars") }}>Extra-Curriculars</Button>
+                                                    <Button style={{ margin: '1%' }} variant="outlined" color="secondary" onClick={() => { handleClick("Volunteer") }}>Volunteering</Button>
                                                 </div>
                                             )}
                                     </>
