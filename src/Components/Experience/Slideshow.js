@@ -22,9 +22,12 @@ const Slideshow = (props) => {
 
     return (
         <div className="slides">
-            <Fade right opposite when={image === 0}><img className="voteImage" src={require('../../Images/voteuhigh.png')} alt="" /></Fade>
+            <Fade right opposite when={image === 0}><img className="test" src={require('../../Images/voteuhigh.png')} alt="" /></Fade>
             <div className="testDiv">
             <Fade right opposite when={image === 1}><img className="test" src={require('../../Images/hackillinois.png')} alt="" /></Fade>
+            </div>
+            <div className="testDiv">
+            <Fade right opposite when={image === 2}><img className="test2" src={require('../../Images/headshot.jpeg')} alt="" /></Fade>
             </div>
         </div>
     );
