@@ -42,7 +42,7 @@ const Experience = (props) => {
                     <div className="toggleBar">
                         <Button style={{ margin: '1%' }} variant="contained" color="secondary" onClick={() => { handleClick("Work") }}>Work Experience</Button>
                         <Button style={{ margin: '1%' }} variant="outlined" color="secondary" onClick={() => { handleClick("Curriculars") }}>Extra-Curriculars</Button>
-                        <Button style={{ margin: '1%' }} variant="outlined" color="secondary" onClick={() => { handleClick("Volunteer") }}>Volunteering</Button>
+                        <Button style={{ margin: '1%' }} variant="outlined" color="secondary" onClick={() => { handleClick("Courses") }}>Relevant Coursework</Button>
                     </div>
                 ) : (
                         <>
@@ -50,21 +50,21 @@ const Experience = (props) => {
                                 <div className="toggleBar">
                                     <Button style={{ margin: '1%' }} variant="outlined" color="secondary" onClick={() => { handleClick("Work") }}>Work Experience</Button>
                                     <Button style={{ margin: '1%' }} variant="contained" color="secondary" onClick={() => { handleClick("Curriculars") }}>Extra-Curriculars</Button>
-                                    <Button style={{ margin: '1%' }} variant="outlined" color="secondary" onClick={() => { handleClick("Volunteer") }}>Volunteering</Button>
+                                    <Button style={{ margin: '1%' }} variant="outlined" color="secondary" onClick={() => { handleClick("Courses") }}>Relevant Coursework</Button>
                                 </div>
                             ) : (
                                     <>
-                                        {section === "Volunteer" ? (
+                                        {section === "Courses" ? (
                                             <div className="toggleBar">
                                                 <Button style={{ margin: '1%' }} variant="outlined" color="secondary" onClick={() => { handleClick("Work") }}>Work Experience</Button>
                                                 <Button style={{ margin: '1%' }} variant="outlined" color="secondary" onClick={() => { handleClick("Curriculars") }}>Extra-Curriculars</Button>
-                                                <Button style={{ margin: '1%' }} variant="contained" color="secondary" onClick={() => { handleClick("Volunteer") }}>Volunteering</Button>
+                                                <Button style={{ margin: '1%' }} variant="contained" color="secondary" onClick={() => { handleClick("Courses") }}>Relevant Coursework</Button>
                                             </div>
                                         ) : (
                                                 <div className="toggleBar">
                                                     <Button style={{ margin: '1%' }} variant="outlined" color="secondary" onClick={() => { handleClick("Work") }}>Work Experience</Button>
                                                     <Button style={{ margin: '1%' }} variant="outlined" color="secondary" onClick={() => { handleClick("Curriculars") }}>Extra-Curriculars</Button>
-                                                    <Button style={{ margin: '1%' }} variant="outlined" color="secondary" onClick={() => { handleClick("Volunteer") }}>Volunteering</Button>
+                                                    <Button style={{ margin: '1%' }} variant="outlined" color="secondary" onClick={() => { handleClick("Courses") }}>Relevant Coursework</Button>
                                                 </div>
                                             )}
                                     </>
