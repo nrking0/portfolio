@@ -21,7 +21,7 @@ const Experience = (props) => {
     function handleClick(s){
         setTimeout(() => {
             setSection(s)
-        }, 190)
+        }, 250)
     };
 
     const [section, setSection] = useState("");
