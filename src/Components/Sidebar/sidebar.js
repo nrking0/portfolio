@@ -112,7 +112,7 @@ function ResponsiveDrawer(props) {
             <IconButton color="inherit" href="mailto:nrking2@illinois.edu" onClick={()=> ReactGA.event({category: "Information", action: "Viewed Email", label: "Email Sidebar"})}><MailIcon></MailIcon></IconButton>
             <IconButton color="inherit" target="_blank" href="https://www.github.com/nrking0" onClick={()=> ReactGA.event({category: "Information", action: "Viewed GitHub", label: "Github Sidebar"})}><GitHubIcon /></IconButton>
             <IconButton color="inherit" target="_blank" href="https://www.linkedin.com/in/nrking0" onClick={()=> ReactGA.event({category: "Information", action: "Viewed LinkedIn", label: "LinkedIn Sidebar"})}><LinkedInIcon /></IconButton>
-            <IconButton color="inherit" target="_blank" href="https://drive.google.com/file/d/1h-_Cyr-2XN5fG3cLumn2LnZv29spkaSb/view?usp=sharing" onClick={()=> ReactGA.event({category: "Information", action: "Viewed resume", label: "Resume Sidebar"})}><DescriptionIcon /></IconButton>
+            <IconButton color="inherit" target="_blank" href="https://drive.google.com/file/d/1y2oJZBs5OLWjc3ybrPbPwxCkqXcMacCv/view?usp=sharing" onClick={()=> ReactGA.event({category: "Information", action: "Viewed resume", label: "Resume Sidebar"})}><DescriptionIcon /></IconButton>
             </div>
             {/* <div className={classes.toolbar} />
             <Divider /> */}
