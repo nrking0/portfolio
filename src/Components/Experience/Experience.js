@@ -4,7 +4,8 @@ import './Experience.css';
 import Fade from 'react-reveal/Fade';
 import { Element } from 'react-scroll';
 import { MdExpandMore } from 'react-icons/md';
-import { Accordion, AccordionSummary, AccordionDetails, withStyles, Button } from '@material-ui/core';
+import { Accordion, AccordionSummary, AccordionDetails, withStyles, Button, Card, CardContent, Typography, makeStyles } from '@material-ui/core';
+
 
 
 const MuiAccordionSummary = withStyles({
@@ -13,18 +14,77 @@ const MuiAccordionSummary = withStyles({
     }
 })(AccordionSummary);
 
+const useStyles = makeStyles({
+    root: {
+        marginBottom: 10,
+        backgroundColor: 'white'
+    },
+    title: {
+        fontSize: 14,
+        color: 'black'
+    },
+    pos: {
+        marginBottom: 10,
+        color: 'black'
+    },
+});
 
+const activities = [
+    {
+        "type": "Curriculars",
+        "title": 'Association for Computing Machinery',
+        "role": 'Special Interest Group for Information Security Member',
+        "date": 'August 2020 – Present',
+        "description": 'Throughout ACM I have had many opportunities to learn more about the amazing world of Computer Science! Within the special interest group for information security I have learned a lot about best practices and vulnerabilities within our current technologies. Additionally, I have been able to work on projects with other students for things we care about. For example, this Fall I am working with a team within ACM to build an Android App that can help communicate important voter information to students and help them register to vote.'
+    },
+    {
+        "type": "Curriculars",
+        "title": 'Marching Illini',
+        "role": 'Trumpet Section Member',
+        "date": 'August 2020 – Present',
+        "description": 'In the Summer of 2020 I auditioned for, and eventually was accepted into, the Marching Illini. While our season looks a little different due to COVID-19, we still have many responsibilities. We learn a large repertoire, which we would normally play at each football game. Beyond that, we work on marching fundamentals, leadership development, and simply bonding more as a band.'
+    },
+    {
+        "type": "Curriculars",
+        "title": 'Campus Honors Program Honors Student Council',
+        "role": 'Academic Engagement Committee Member',
+        "date": 'August 2020 – Present',
+        "description": 'At the beginning of the 2020 school year I decided to join the Honors Student Council. Through the Academic Engagement Committee I have planned events to help bring students academic resources and help them meet professors. I have set up meet-and-greets and talks between students and professors and publicized the events to garner wider engagement.'
+    },
+    {
+        "type": "Work",
+        "title": 'Gene\'s Ice Cream',
+        "role": 'Shift Lead',
+        "date": 'March 2018 – August 2020',
+        "description": 'Over the past three years, I worked at an ice cream shop while I was in high school. I worked across all roles in the stores, while maintaining an important focus on customer service. I eventually moved towards a leadership role, where I have helped manage shifts and lead different tasks during our work. I have counted the cash in the drawers at the end shifts, and I helped look into new items that we could sell at the store.'
+    },
+    {
+        "type": "Curriculars",
+        "title": 'University High School Student Senate',
+        "role": 'Student Body Vice President',
+        "date": 'August 2016 - May 2020',
+        "description": 'Throughout all four years in high school I was elected to my school\'s Student Senate. In my senior year I was elected as Student Body Vice President. I organized many events during my time in Senate including dances, fundraisers, and school spirit events. Additionally, in my senior year I became the coordinator of our biannual Red Cross blood drive. I helped organize the event and get as many donors as possible. We ended up getting more donors than the past two years combined my senior year!'
+    },
+    {
+        "type": "Curriculars",
+        "title": 'University High School Speech Team',
+        "role": 'Captain',
+        "date": 'August 2016 – May 2020',
+        "description": 'As a member of the Speech team I competed mainly in impromptu and extemporaneous speaking. I competed across the national circuit where I performed in a national final, two state finals, a tournament of champions final, and a tournament of champions semifinal. In my senior year, I worked to introduce the team culture to new members and bring more people into my events. During my senior year our team finished as a top twenty school in the nation at the national tournament.'
+    }]
 
 
 const Experience = (props) => {
 
-    function handleClick(s){
+    const classes = useStyles();
+
+    function handleClick(s) {
         setTimeout(() => {
             setSection(s)
         }, 250)
     };
 
-    const [section, setSection] = useState("");
+    const [section, setSection] = useState("Work");
 
     return (
         <Element id="Experience">
@@ -74,6 +134,31 @@ const Experience = (props) => {
                 <div className="experienceMain">
                     <div className="slideshow">
                         <Slideshow></Slideshow>
+                    </div>
+                    <div className="paperList">
+                        {activities.map((activity) => (
+                            <>
+                            <Fade collapse when={section === activity.type}>
+                                <Card className={classes.root} elevation={3}>
+                                    <CardContent>
+                                        <Typography variant="h6" component="h2">
+                                            {activity.title}
+                                        </Typography>
+                                        <Typography className={classes.pos} color="inherit">
+                                            {activity.role}
+                                        </Typography>
+                                        <Typography className={classes.pos} color="inherit">
+                                            {activity.date}
+                                        </Typography>
+                                        <Typography variant="body2" component="p">
+                                            {activity.description}
+                                        </Typography>
+                                    </CardContent>
+                                </Card>
+                            </Fade>
+                            <br/>
+                            </>
+                        ))}
                     </div>
                     <div className="accordion">
                         <Accordion>

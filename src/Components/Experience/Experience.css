@@ -8,6 +8,12 @@
 
 .accordion {
     margin: auto;
+    width: 80%;
+    display: none;
+}
+
+.paperList {
+    margin: auto;
     width: 40%;
 }
 
@@ -46,11 +52,15 @@
 
 @media only screen and (max-width: 600px) {
     .accordion {
-        width: 80%;
+        display: block;
     }
 
     .slideshow {
         /* width: 80%; */
+        display: none;
+    }
+
+    .paperList {
         display: none;
     }
 }

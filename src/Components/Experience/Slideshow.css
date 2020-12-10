@@ -2,6 +2,10 @@
     position: relative;
 }
 
+.container {
+    display: flex;
+    flex-direction: row;
+}
 
 .test {
     position: relative;
@@ -15,5 +19,4 @@
 .test2 {
     position: relative;
     width: 50%;
-    
 }
