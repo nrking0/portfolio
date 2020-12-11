@@ -31,6 +31,13 @@ const useStyles = makeStyles({
 
 const activities = [
     {
+        "type": "Work",
+        "title": 'Gene\'s Ice Cream',
+        "role": 'Shift Lead',
+        "date": 'March 2018 – August 2020',
+        "description": 'Over the past three years, I worked at an ice cream shop while I was in high school. I worked across all roles in the stores, while maintaining an important focus on customer service. I eventually moved towards a leadership role, where I have helped manage shifts and lead different tasks during our work. I have counted the cash in the drawers at the end shifts, and I helped look into new items that we could sell at the store.'
+    },
+    {
         "type": "Curriculars",
         "title": 'Association for Computing Machinery',
         "role": 'Special Interest Group for Information Security Member',
@@ -50,13 +57,6 @@ const activities = [
         "role": 'Academic Engagement Committee Member',
         "date": 'August 2020 – Present',
         "description": 'At the beginning of the 2020 school year I decided to join the Honors Student Council. Through the Academic Engagement Committee I have planned events to help bring students academic resources and help them meet professors. I have set up meet-and-greets and talks between students and professors and publicized the events to garner wider engagement.'
-    },
-    {
-        "type": "Work",
-        "title": 'Gene\'s Ice Cream',
-        "role": 'Shift Lead',
-        "date": 'March 2018 – August 2020',
-        "description": 'Over the past three years, I worked at an ice cream shop while I was in high school. I worked across all roles in the stores, while maintaining an important focus on customer service. I eventually moved towards a leadership role, where I have helped manage shifts and lead different tasks during our work. I have counted the cash in the drawers at the end shifts, and I helped look into new items that we could sell at the store.'
     },
     {
         "type": "Curriculars",
@@ -136,8 +136,8 @@ const Experience = (props) => {
                         <Slideshow></Slideshow>
                     </div>
                     <div className="paperList">
-                        {activities.map((activity) => (
-                            <>
+                         {activities.map((activity) => (
+                            <div style={{marginTop:'2%'}}>
                             <Fade collapse when={section === activity.type}>
                                 <Card className={classes.root} elevation={3}>
                                     <CardContent>
@@ -156,9 +156,8 @@ const Experience = (props) => {
                                     </CardContent>
                                 </Card>
                             </Fade>
-                            <br/>
-                            </>
-                        ))}
+                            </div>
+                        ))} 
                     </div>
                     <div className="accordion">
                         <Accordion>

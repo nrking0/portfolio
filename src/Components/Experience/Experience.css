@@ -13,6 +13,7 @@
 }
 
 .paperList {
+    padding-top: 3%;
     margin: auto;
     width: 40%;
 }
@@ -48,6 +49,14 @@
     .experienceMain {
         flex-direction: column;
     }
+
+    .paperList {
+        width: 80%;
+    }
+
+    .slideshow {
+        width: 80%;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -61,6 +70,10 @@
     }
 
     .paperList {
+        display: none;
+    }
+
+    .toggleBar {
         display: none;
     }
 }
