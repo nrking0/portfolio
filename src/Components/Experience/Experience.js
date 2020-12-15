@@ -32,6 +32,13 @@ const useStyles = makeStyles({
 const activities = [
     {
         "type": "Work",
+        "title": 'State Farm Insurance Company',
+        "role": 'Information Secuirty Intern',
+        "date": 'Summer 2021',
+        "description": 'Over the past three years, I worked at an ice cream shop while I was in high school. I worked across all roles in the stores, while maintaining an important focus on customer service. I eventually moved towards a leadership role, where I have helped manage shifts and lead different tasks during our work. I have counted the cash in the drawers at the end shifts, and I helped look into new items that we could sell at the store.'
+    },
+    {
+        "type": "Work",
         "title": 'Gene\'s Ice Cream',
         "role": 'Shift Lead',
         "date": 'March 2018 – August 2020',
@@ -71,6 +78,41 @@ const activities = [
         "role": 'Captain',
         "date": 'August 2016 – May 2020',
         "description": 'As a member of the Speech team I competed mainly in impromptu and extemporaneous speaking. I competed across the national circuit where I performed in a national final, two state finals, a tournament of champions final, and a tournament of champions semifinal. In my senior year, I worked to introduce the team culture to new members and bring more people into my events. During my senior year our team finished as a top twenty school in the nation at the national tournament.'
+    },
+    {
+        "type": "Courses",
+        "title": 'Software Design Studio',
+        "role": 'CS126',
+        "date": 'Spring 2021',
+        "description": 'Write Description'
+    },
+    {
+        "type": "Courses",
+        "title": 'Discrete Structures',
+        "role": 'CS173',
+        "date": 'Spring 2021',
+        "description": 'Write Description'
+    },
+    {
+        "type": "Courses",
+        "title": 'Statistics and Probability',
+        "role": 'STAT400',
+        "date": 'Spring 2021',
+        "description": 'Write Description'
+    },
+    {
+        "type": "Courses",
+        "title": 'Applied Linear Algebra',
+        "role": 'MATH415',
+        "date": 'Fall 2020',
+        "description": 'Write Description'
+    },
+    {
+        "type": "Courses",
+        "title": 'Introduction to Computer Science (Java)',
+        "role": 'CS125',
+        "date": 'Fall 2020',
+        "description": 'Write Description'
     }]
 
 
@@ -137,7 +179,7 @@ const Experience = (props) => {
                     </div>
                     <div className="paperList">
                          {activities.map((activity) => (
-                            <div style={{marginTop:'2%'}}>
+                            <div style={{margin:'2%'}}>
                             <Fade collapse when={section === activity.type}>
                                 <Card className={classes.root} elevation={3}>
                                     <CardContent>
@@ -156,6 +198,7 @@ const Experience = (props) => {
                                     </CardContent>
                                 </Card>
                             </Fade>
+                            
                             </div>
                         ))} 
                     </div>
