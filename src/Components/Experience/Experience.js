@@ -35,7 +35,7 @@ const activities = [
         "title": 'State Farm Insurance Company',
         "role": 'Information Secuirty Intern',
         "date": 'Summer 2021',
-        "description": 'Over the past three years, I worked at an ice cream shop while I was in high school. I worked across all roles in the stores, while maintaining an important focus on customer service. I eventually moved towards a leadership role, where I have helped manage shifts and lead different tasks during our work. I have counted the cash in the drawers at the end shifts, and I helped look into new items that we could sell at the store.'
+        "description": 'I was recently hired as an intern at State Farm Insurance Company within the Information Security Department for Summer 2021.'
     },
     {
         "type": "Work",
@@ -84,7 +84,7 @@ const activities = [
         "title": 'Software Design Studio',
         "role": 'CS126',
         "date": 'Spring 2021',
-        "description": 'Write Description'
+        "description": 'Project-based course focused on teaching programing techniques and style fundamentals for creating larger projects.'
     },
     {
         "type": "Courses",
@@ -98,21 +98,21 @@ const activities = [
         "title": 'Statistics and Probability',
         "role": 'STAT400',
         "date": 'Spring 2021',
-        "description": 'Write Description'
+        "description": 'Advanced introduction course for statistics and probability.'
     },
     {
         "type": "Courses",
         "title": 'Applied Linear Algebra',
         "role": 'MATH415',
         "date": 'Fall 2020',
-        "description": 'Write Description'
+        "description": 'Advanced Math course covering Linear Algebra with a special coding lab in python to apply linear algebra principles in computer science.'
     },
     {
         "type": "Courses",
         "title": 'Introduction to Computer Science (Java)',
         "role": 'CS125',
         "date": 'Fall 2020',
-        "description": 'Write Description'
+        "description": 'Introduction course to programing and computer science principles taught in java.'
     }]
 
 
@@ -179,8 +179,8 @@ const Experience = (props) => {
                     </div>
                     <div className="paperList">
                          {activities.map((activity) => (
-                            <div style={{margin:'2%'}}>
-                            <Fade collapse when={section === activity.type}>
+                             <Fade collapse when={section === activity.type}>
+                                <div style={{marginBottom:'2%'}}>
                                 <Card className={classes.root} elevation={3}>
                                     <CardContent>
                                         <Typography variant="h6" component="h2">
@@ -197,10 +197,14 @@ const Experience = (props) => {
                                         </Typography>
                                     </CardContent>
                                 </Card>
-                            </Fade>
-                            
                             </div>
+                            </Fade>
                         ))} 
+
+
+                
+
+
                     </div>
                     <div className="accordion">
                         <Accordion>
