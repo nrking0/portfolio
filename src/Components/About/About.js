@@ -97,7 +97,7 @@ const About = (props) => {
                         <p>Django, React, Node.js, Express.js, PostgreSQL, Heroku, Flutter</p>
                     </div>
                 </div>
-                <Button style={{ marginTop: '4%' }} href="https://drive.google.com/file/d/1h-_Cyr-2XN5fG3cLumn2LnZv29spkaSb/view?usp=sharing" variant="contained" color="primary" target="_blank" onClick={()=> ReactGA.event({category: "Information", action: "Viewed Resume", label: "Resume About Section"})}>Check Out my Full Resume</Button>
+                <Button style={{ marginTop: '4%' }} href="https://drive.google.com/file/d/1y2oJZBs5OLWjc3ybrPbPwxCkqXcMacCv/view?usp=sharing" variant="contained" color="primary" target="_blank" onClick={()=> ReactGA.event({category: "Information", action: "Viewed Resume", label: "Resume About Section"})}>Check Out my Full Resume</Button>
                 </Fade>
             
         </Element>

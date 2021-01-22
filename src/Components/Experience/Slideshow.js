@@ -8,7 +8,7 @@ import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 
 const Slideshow = (props) => {
 
-    let imgLen = 2;
+    let imgLen = 6;
     
     const [reverse, setReverse] = useState(false);
     const [image, setImage] = useState(0);
@@ -52,23 +52,47 @@ const Slideshow = (props) => {
         <div className="container">
             <IconButton onClick={() => handleClick(-1)}><ArrowBackIosIcon /></IconButton>
             {reverse ? (
-                <div className="slides">
-                <Fade left opposite when={image === 0}><img className="test" src={require('../../Images/voteuhigh.png')} alt="" /></Fade>
-                <div className="testDiv">
-                    <Fade left opposite when={image === 1}><img className="test" src={require('../../Images/hackillinois.png')} alt="" /></Fade>
+            <div className="slides">
+                <Fade left opposite when={image === 0}><img className="image" src={require('../../Images/MISection.png')} alt="" /></Fade>
+                <div className="imageDiv">
+                    <Fade left opposite when={image === 1}><img className="image2" src={require('../../Images/alma.png')} alt="" /></Fade>
                 </div>
-                <div className="testDiv">
-                    <Fade left opposite when={image === 2}><img className="test2" src={require('../../Images/headshot.jpeg')} alt="" /></Fade>
+                <div className="imageDiv">
+                    <Fade left opposite when={image === 2}><img className="image3" src={require('../../Images/genes.png')} alt="" /></Fade>
+                </div>
+                <div className="imageDiv">
+                    <Fade left opposite when={image === 3}><img className="image4" src={require('../../Images/mathTeam.png')} alt="" /></Fade>
+                </div>
+                <div className="imageDiv">
+                    <Fade left opposite when={image === 4}><img className="image5" src={require('../../Images/DGSAward.png')} alt="" /></Fade>
+                </div>
+                <div className="imageDiv">
+                    <Fade left opposite when={image === 5}><img className="image6" src={require('../../Images/speechTOC.png')} alt="" /></Fade>
+                </div>
+                <div className="imageDiv">
+                    <Fade left opposite when={image === 6}><img className="image7" src={require('../../Images/speechNationals.png')} alt="" /></Fade>
                 </div>
             </div>
             ) : (
             <div className="slides">
-                <Fade right opposite when={image === 0}><img className="test" src={require('../../Images/voteuhigh.png')} alt="" /></Fade>
-                <div className="testDiv">
-                    <Fade right opposite when={image === 1}><img className="test" src={require('../../Images/hackillinois.png')} alt="" /></Fade>
+                <Fade right opposite when={image === 0}><img className="image" src={require('../../Images/MISection.png')} alt="" /></Fade>
+                <div className="imageDiv">
+                    <Fade right opposite when={image === 1}><img className="image2" src={require('../../Images/alma.png')} alt="" /></Fade>
                 </div>
-                <div className="testDiv">
-                    <Fade right opposite when={image === 2}><img className="test2" src={require('../../Images/headshot.jpeg')} alt="" /></Fade>
+                <div className="imageDiv">
+                    <Fade right opposite when={image === 2}><img className="image3" src={require('../../Images/genes.png')} alt="" /></Fade>
+                </div>
+                <div className="imageDiv">
+                    <Fade right opposite when={image === 3}><img className="image4" src={require('../../Images/mathTeam.png')} alt="" /></Fade>
+                </div>
+                <div className="imageDiv">
+                    <Fade right opposite when={image === 4}><img className="image5" src={require('../../Images/DGSAward.png')} alt="" /></Fade>
+                </div>
+                <div className="imageDiv">
+                    <Fade right opposite when={image === 5}><img className="image6" src={require('../../Images/speechTOC.png')} alt="" /></Fade>
+                </div>
+                <div className="imageDiv">
+                    <Fade right opposite when={image === 6}><img className="image7" src={require('../../Images/speechNationals.png')} alt="" /></Fade>
                 </div>
             </div>
             )}

@@ -91,7 +91,7 @@ const activities = [
         "title": 'Discrete Structures',
         "role": 'CS173',
         "date": 'Spring 2021',
-        "description": 'Write Description'
+        "description": 'Course examining important mathematical fundamentals of Computer Science and their applications.'
     },
     {
         "type": "Courses",
