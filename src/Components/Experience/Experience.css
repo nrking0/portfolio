@@ -8,16 +8,40 @@
 
 .accordion {
     margin: auto;
+    width: 80%;
+    display: none;
+}
+
+.paperList {
+    /* padding-top: 6%; */
+    margin: auto;
     width: 40%;
 }
+
 
 .descrip {
-    width: 40%;
-    margin: auto;
+    margin: 4%;
 }
 
+.toggleBar {
+    margin: auto;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.slideshow {
+    margin: auto;
+    width: 40%;
+    margin-top: 0;
+}
+
+
 .experienceMain {
-    padding-top: 8%;
+    padding-top: 4%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -27,14 +51,31 @@
     .experienceMain {
         flex-direction: column;
     }
+
+    .paperList {
+        width: 80%;
+    }
+
+    .slideshow {
+        width: 80%;
+    }
 }
 
 @media only screen and (max-width: 600px) {
     .accordion {
-        width: 80%;
+        display: block;
     }
 
-    .descrip {
-        width: 80%;
+    .slideshow {
+        /* width: 80%; */
+        display: none;
+    }
+
+    .paperList {
+        display: none;
+    }
+
+    .toggleBar {
+        display: none;
     }
 }

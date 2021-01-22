@@ -58,3 +58,14 @@
         opacity: 1;
     } 
 } 
+
+
+@media only screen and (max-width: 600px) {
+    .base h1 {
+       top: 10%;
+    }
+
+    .base p {
+        top: 6%;
+    }
+}

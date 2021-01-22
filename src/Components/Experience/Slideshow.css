@@ -1,0 +1,48 @@
+.slides {
+    position: relative;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.imageDiv {
+    position: absolute;
+    transform: translate(0, -100%);
+}
+
+.image {
+    position: relative;
+    width: 75%;
+}
+
+.image2 {
+    position: relative;
+    width: 42%;
+}
+
+.image3 {
+    position: relative;
+    width: 100%;
+}
+
+.image4 {
+    position: relative;
+    width: 45%;
+}
+
+.image5 {
+    position: relative;
+    width: 42%;
+}
+
+.image6 {
+    position: relative;
+    width: 75%;
+}
+
+.image7 {
+    position: relative;
+    width: 80%;
+}

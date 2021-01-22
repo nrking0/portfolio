@@ -15,7 +15,6 @@ function App() {
   useEffect(() => {
     ReactGA.initialize('UA-180161846-1');
     ReactGA.pageview('/Home');
-    // eslint-disable-next-line
   }, []);
   return (
 
