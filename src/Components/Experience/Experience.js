@@ -177,6 +177,7 @@ const Experience = (props) => {
                     <div className="slideshow">
                         <Slideshow></Slideshow>
                     </div>
+                    
                     <div className="paperList">
                          {activities.map((activity) => (
                              <Fade collapse when={section === activity.type}>
@@ -200,12 +201,8 @@ const Experience = (props) => {
                             </div>
                             </Fade>
                         ))} 
-
-
-                
-
-
                     </div>
+
                     <div className="accordion">
                         <Accordion>
                             <MuiAccordionSummary expandIcon={<MdExpandMore />}>Association for Computing Machinery</MuiAccordionSummary>
