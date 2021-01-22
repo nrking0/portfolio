@@ -1,27 +1,34 @@
 {
   "files": {
-    "main.css": "/static/css/main.2c76bfbb.chunk.css",
-    "main.js": "/static/js/main.4cf5cdbf.chunk.js",
-    "main.js.map": "/static/js/main.4cf5cdbf.chunk.js.map",
+    "main.css": "/static/css/main.37fb2de4.chunk.css",
+    "main.js": "/static/js/main.25617550.chunk.js",
+    "main.js.map": "/static/js/main.25617550.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.19ccc7f6.js",
     "runtime-main.js.map": "/static/js/runtime-main.19ccc7f6.js.map",
-    "static/js/2.b020c571.chunk.js": "/static/js/2.b020c571.chunk.js",
-    "static/js/2.b020c571.chunk.js.map": "/static/js/2.b020c571.chunk.js.map",
+    "static/js/2.9f0c71fe.chunk.js": "/static/js/2.9f0c71fe.chunk.js",
+    "static/js/2.9f0c71fe.chunk.js.map": "/static/js/2.9f0c71fe.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.c7cf168f3fdddd4f457c39d3cb9a6156.js": "/precache-manifest.c7cf168f3fdddd4f457c39d3cb9a6156.js",
+    "precache-manifest.a45850abf3d69e14c80a3b42ea6ef68a.js": "/precache-manifest.a45850abf3d69e14c80a3b42ea6ef68a.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.2c76bfbb.chunk.css.map": "/static/css/main.2c76bfbb.chunk.css.map",
-    "static/js/2.b020c571.chunk.js.LICENSE.txt": "/static/js/2.b020c571.chunk.js.LICENSE.txt",
+    "static/css/main.37fb2de4.chunk.css.map": "/static/css/main.37fb2de4.chunk.css.map",
+    "static/js/2.9f0c71fe.chunk.js.LICENSE.txt": "/static/js/2.9f0c71fe.chunk.js.LICENSE.txt",
+    "static/media/DGSAward.png": "/static/media/DGSAward.7159aea9.png",
+    "static/media/MISection.png": "/static/media/MISection.1486db03.png",
+    "static/media/alma.png": "/static/media/alma.11493d5c.png",
+    "static/media/genes.png": "/static/media/genes.8f13b80d.png",
     "static/media/hackillinois.png": "/static/media/hackillinois.8a00e04a.png",
     "static/media/headshot2.jpeg": "/static/media/headshot2.965279ce.jpeg",
+    "static/media/mathTeam.png": "/static/media/mathTeam.8a9e1329.png",
     "static/media/Home.css": "/static/media/me.b7f0b9e7.jpg",
+    "static/media/speechNationals.png": "/static/media/speechNationals.7eb25466.png",
+    "static/media/speechTOC.png": "/static/media/speechTOC.382e64ef.png",
     "static/media/studentsmeet.png": "/static/media/studentsmeet.e2db5eff.png",
     "static/media/voteuhigh.png": "/static/media/voteuhigh.9bd77688.png"
   },
   "entrypoints": [
     "static/js/runtime-main.19ccc7f6.js",
-    "static/js/2.b020c571.chunk.js",
-    "static/css/main.2c76bfbb.chunk.css",
-    "static/js/main.4cf5cdbf.chunk.js"
+    "static/js/2.9f0c71fe.chunk.js",
+    "static/css/main.37fb2de4.chunk.css",
+    "static/js/main.25617550.chunk.js"
   ]
 }
