@@ -41,7 +41,9 @@
 }
 
 
-
+.polarioImage {
+    width: 100%;
+}
 
 .item {
     padding: 3em 3em 1em 3em;

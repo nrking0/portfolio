@@ -22,6 +22,26 @@ const Projects = (props) => {
                 <Fade bottom>
                     <article style={{width: '40vh', marginBottom: '5%'}} className="item">
                         <header>
+                            <a href="javascript:void(0)" onClick={()=> ReactGA.event({category: "Projects", action: "Viewed Polario", label: "Polario"})}><img className="polarioImage" src={require('../../Images/polario.png')} alt="" /></a>
+                            <h3>Polario</h3>
+                        </header>
+                        <p>This is a Chrome Extension that I am currently working on that rates the reliability of news sources. Polario takes a bias rating combined with an accuracy rating to calculate an overall score for a source. Eventually we hope to add user accounts to the extension along with article-specific bias ratings.</p>
+                        
+                        <Button href="" variant="outlined" color="primary">Currently in Development</Button>
+                    </article>
+
+                    <article style={{width: '40vh', marginBottom: '5%'}} className="item">
+                        <header>
+                            <a href="javascript:void(0)" onClick={()=> ReactGA.event({category: "Projects", action: "Viewed IAware", label: "IAware"})}><img className="polarioImage" src={require('../../Images/IAware.png')} alt="" /></a>
+                            <h3>I-Aware</h3>
+                        </header>
+                        <p>This is an app I am currently working on with a team at my school. I am helping build an app that will help give import civic information to voters using Flutter. The app will give information about citizen's local representatives, have up to date news, and even help people register to vote.</p>
+                        
+                        <Button href="" variant="outlined" color="primary">Currently in Development</Button>
+                    </article>
+
+                    <article style={{width: '40vh', marginBottom: '5%'}} className="item">
+                        <header>
                             <a href="https://voteuhigh.herokuapp.com" target="_blank" rel="noopener noreferrer" onClick={()=> ReactGA.event({category: "Projects", action: "Viewed VoteUhigh", label: "VoteUhigh"})}><img className="voteImage" src={require('../../Images/voteuhigh.png')} alt="" /></a>
                             <h3>Vote U-High</h3>
                         </header>
