@@ -38,7 +38,7 @@ const Projects = (props) => {
                             <a href={blankURL} onClick={()=> ReactGA.event({category: "Projects", action: "Viewed IAware", label: "IAware"})}><img className="polarioImage" src={require('../../Images/IAware.png')} alt="" /></a>
                             <h3>I-Aware</h3>
                         </header>
-                        <p>This is an app I am currently working on with a team at my school. I am helping build an app that will help give important civic information to voters using Flutter. The app will give information about citizen's local representatives, have up to date news, and even help people register to vote.</p>
+                        <p>This is an app I am currently working on with a team at my school. I am helping build an app, using Flutter, that will give important civic information to voters. The app will give information about citizen's local representatives, have up to date news, and even help people register to vote.</p>
                         
                         <Button href="" variant="outlined" color="primary">Currently in Development</Button>
                     </article>
