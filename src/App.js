@@ -12,10 +12,12 @@ import ReactGA from 'react-ga';
 
 
 function App() {
+  let analytics = process.env.REACT_APP_GOOGLE_ANALYTICS;
+
   useEffect(() => {
-    ReactGA.initialize('UA-180161846-1');
+    ReactGA.initialize(analytics);
     ReactGA.pageview('/Home');
-  }, []);
+  }, [analytics]);
   return (
 
     <div className="App">
