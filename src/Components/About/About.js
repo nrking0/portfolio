@@ -92,7 +92,7 @@ const About = (props) => {
                         <h1>Skills</h1>
                         <p>Communicative, Leadership, Growth-Mindset, Emotional Intelligence, Collaborative</p>
                         <h3>Languages</h3>
-                        <p>Spanish, Java, HTML/CSS, SQL, Python, JavaScript, Bash, Dart</p>
+                        <p>Spanish, Java, HTML/CSS, SQL, Python, JavaScript, Bash, Dart, C++</p>
                         <h3>Frameworks</h3>
                         <p>Django, React, Node.js, Express.js, PostgreSQL, Heroku, Flutter</p>
                     </div>
