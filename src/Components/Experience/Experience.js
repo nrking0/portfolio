@@ -182,7 +182,7 @@ const Experience = (props) => {
                 )}
                 <div className="experienceMain">
                     <div className="slideshow">
-                        <Slideshow></Slideshow>
+                        <Slideshow/>
                     </div>
 
                     <div className="paperList">

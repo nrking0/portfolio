@@ -6,3 +6,19 @@
     padding-bottom: 5%;
     padding-top: 10%;
 }
+
+/* #Contact::before {
+    vertical-align: bottom;
+    position: absolute;
+    content: "";
+    z-index: 0;
+    height: 50%;
+    left: 280px;
+    top: auto;
+    transform: translateY(-40%);
+    width: calc(100% - 280px);
+    background-color: #4467f3; 
+    border-top-left-radius: 45% 1.5%;
+    border-top-right-radius: 45% 1.5%;
+    box-shadow: 0 2px 4px 0px rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+} */

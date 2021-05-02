@@ -30,6 +30,15 @@ const Slideshow = (props) => {
         }
     }
 
+    function handleDotClick(dir) {
+        if (dir < image) {
+            setReverse(true);
+            setImage(dir);
+        } else {
+          setImage(dir);
+        }
+    }
+
     useEffect(() => {
         const timer = setTimeout(() => {
             setReverse(false);
@@ -49,6 +58,7 @@ const Slideshow = (props) => {
 
 
     return (
+        <div>
         <div className="container">
             <IconButton onClick={() => handleClick(-1)}><ArrowBackIosIcon /></IconButton>
             {reverse ? (
@@ -97,6 +107,18 @@ const Slideshow = (props) => {
             </div>
             )}
             <IconButton onClick={() => handleClick(1)}><ArrowForwardIosIcon /></IconButton>
+        </div>
+        
+        <div className="dotContainer">
+            <div className={image === 0 ? "dot bigger" : "dot"} onClick={() => handleDotClick(0)}></div>
+            <div className={image === 1 ? "dot bigger" : "dot"} onClick={() => handleDotClick(1)}></div>
+            <div className={image === 2 ? "dot bigger" : "dot"} onClick={() => handleDotClick(2)}></div>
+            <div className={image === 3 ? "dot bigger" : "dot"} onClick={() => handleDotClick(3)}></div>
+            <div className={image === 4 ? "dot bigger" : "dot"} onClick={() => handleDotClick(4)}></div>
+            <div className={image === 5 ? "dot bigger" : "dot"} onClick={() => handleDotClick(5)}></div>
+            <div className={image === 6 ? "dot bigger" : "dot"} onClick={() => handleDotClick(6)}></div>
+        </div>
+
         </div>
     );
 };

@@ -37,11 +37,12 @@ const About = (props) => {
 
     return (
         <Element id="About" name="About">
-                <div className="AboutText">
+            <div className="extra"></div>
+            <div className="AboutText">
             <Fade bottom cascade>
                     <h1>About Me</h1>
                 </Fade>
-                </div>
+            </div>
                 <div className="description">
                     <Fade bottom >
                     <p>Ever since I was introduced to computer programming in high school, I have been infatuated with being able to manipulate computers
@@ -81,6 +82,8 @@ const About = (props) => {
                         <p>National Speech and Debate Association <br />National 5th Place in Impromptu Speaking</p>
                         <p>National Speech and Debate Association Academic All-American</p>
                         <p>2020 National AP Scholar</p>
+                        <p>University of Illinois Fall 2020 Dean's List</p>
+                        <p>Aim High Grant Recipient</p>
                     </div>
                     {(size.width > 1300) ? (
                         <Divider orientation="vertical" flexItem={true}></Divider>
@@ -92,14 +95,13 @@ const About = (props) => {
                         <h1>Skills</h1>
                         <p>Communicative, Leadership, Growth-Mindset, Emotional Intelligence, Collaborative</p>
                         <h3>Languages</h3>
-                        <p>Spanish, Java, HTML/CSS, SQL, Python, JavaScript, Bash, Dart, C++</p>
+                        <p>Spanish, Java, HTML/CSS, SQL, Python, JavaScript, Bash, Dart, C++, R</p>
                         <h3>Frameworks</h3>
-                        <p>Django, React, Node.js, Express.js, PostgreSQL, Heroku, Flutter</p>
+                        <p>Django, React, Node.js, Express.js, PostgreSQL, Heroku, Flutter, Cinder, Flask</p>
                     </div>
                 </div>
                 <Button style={{ marginTop: '4%' }} href="https://drive.google.com/file/d/1y2oJZBs5OLWjc3ybrPbPwxCkqXcMacCv/view?usp=sharing" variant="contained" color="primary" target="_blank" onClick={()=> ReactGA.event({category: "Information", action: "Viewed Resume", label: "Resume About Section"})}>Check Out my Full Resume</Button>
                 </Fade>
-            
         </Element>
     )
 };
