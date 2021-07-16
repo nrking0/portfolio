@@ -63,7 +63,7 @@ const About = (props) => {
                         <h3>University of Illinois at Urbana-Champaign</h3>
                         <p>B.S. in Mathematics and Computer Science</p>
                         <p>August 2020 - Present</p>
-                        <p>GPA: 4.0/4.0</p>
+                        <p>GPA: 3.94/4.0</p>
                         <h3>University High School, Normal Illinois</h3>
                         <p>August 2016 - May 2020</p>
                         <p>GPA: 4.0/4.0, Valedictorian</p>
