@@ -7,7 +7,7 @@ import LanguageIcon from '@material-ui/icons/Language';
 import Divider from '@material-ui/core/Divider';
 import Button from '@material-ui/core/Button';
 import Fade from 'react-reveal/Fade';
-import ReactGA from 'react-ga';
+import event from '../../utils/analytics';
 
 
 
@@ -100,7 +100,7 @@ const About = (props) => {
                         <p>Django, React, Node.js, Express.js, PostgreSQL, Heroku, Flutter, Cinder, Flask</p>
                     </div>
                 </div>
-                <Button style={{ marginTop: '4%' }} href="https://drive.google.com/file/d/1L2j00rdrF8nt2qiMFN22BBhOaMH77kVB/view?usp=sharing" variant="contained" color="primary" target="_blank" onClick={()=> ReactGA.event({category: "Information", action: "Viewed Resume", label: "Resume About Section"})}>Check Out my Full Resume</Button>
+                <Button style={{ marginTop: '4%' }} href="https://drive.google.com/file/d/1L2j00rdrF8nt2qiMFN22BBhOaMH77kVB/view?usp=sharing" variant="contained" color="primary" target="_blank" onClick={()=> event({category: "Information", action: "Viewed Resume", label: "Resume About Section"})}>Check Out my Full Resume</Button>
                 </Fade>
         </Element>
     )

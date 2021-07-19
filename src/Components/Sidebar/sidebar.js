@@ -20,7 +20,7 @@ import DescriptionIcon from '@material-ui/icons/Description';
 import MailIcon from '@material-ui/icons/Mail';
 import './Sidebar.css';
 import FadeIn from "react-fade-in";
-import ReactGA from 'react-ga';
+import event from '../../utils/analytics';
 
 const drawerWidth = 280;
 
@@ -109,10 +109,10 @@ function ResponsiveDrawer(props) {
             <h1 style={{ textAlign: 'center' }}>Nick King</h1>
             <img src={require('../../Images/headshot2.jpeg')} className="headshot" alt=""></img>
             <div className="icons">
-            <IconButton color="inherit" href="mailto:nrking2@illinois.edu" onClick={()=> ReactGA.event({category: "Information", action: "Viewed Email", label: "Email Sidebar"})}><MailIcon></MailIcon></IconButton>
-            <IconButton color="inherit" target="_blank" href="https://www.github.com/nrking0" onClick={()=> ReactGA.event({category: "Information", action: "Viewed GitHub", label: "Github Sidebar"})}><GitHubIcon /></IconButton>
-            <IconButton color="inherit" target="_blank" href="https://www.linkedin.com/in/nrking0" onClick={()=> ReactGA.event({category: "Information", action: "Viewed LinkedIn", label: "LinkedIn Sidebar"})}><LinkedInIcon /></IconButton>
-            <IconButton color="inherit" target="_blank" href="https://drive.google.com/file/d/1L2j00rdrF8nt2qiMFN22BBhOaMH77kVB/view?usp=sharing" onClick={()=> ReactGA.event({category: "Information", action: "Viewed resume", label: "Resume Sidebar"})}><DescriptionIcon /></IconButton>
+            <IconButton color="inherit" href="mailto:nrking2@illinois.edu" onClick={()=> event({category: "Information", action: "Viewed Email", label: "Email Sidebar"})}><MailIcon></MailIcon></IconButton>
+            <IconButton color="inherit" target="_blank" href="https://www.github.com/nrking0" onClick={()=> event({category: "Information", action: "Viewed GitHub", label: "Github Sidebar"})}><GitHubIcon /></IconButton>
+            <IconButton color="inherit" target="_blank" href="https://www.linkedin.com/in/nrking0" onClick={()=> event({category: "Information", action: "Viewed LinkedIn", label: "LinkedIn Sidebar"})}><LinkedInIcon /></IconButton>
+            <IconButton color="inherit" target="_blank" href="https://drive.google.com/file/d/1L2j00rdrF8nt2qiMFN22BBhOaMH77kVB/view?usp=sharing" onClick={()=> event({category: "Information", action: "Viewed resume", label: "Resume Sidebar"})}><DescriptionIcon /></IconButton>
             </div>
             {/* <div className={classes.toolbar} />
             <Divider /> */}

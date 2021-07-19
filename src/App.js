@@ -8,16 +8,10 @@ import Loading from './Components/Loading/Loading.js';
 import Experience from './Components/Experience/Experience.js';
 import FadeIn from "react-fade-in";
 import Contact from './Components/Contact/Contact.js';
-import ReactGA from 'react-ga';
 
 
 function App() {
-  let analytics = process.env.REACT_APP_GOOGLE_ANALYTICS;
-
-  useEffect(() => {
-    ReactGA.initialize(analytics);
-    ReactGA.pageview('/Home');
-  }, [analytics]);
+  
   return (
 
     <div className="App">
