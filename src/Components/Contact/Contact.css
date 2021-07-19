@@ -1,5 +1,6 @@
 #Contact {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
     background: linear-gradient(180deg, #9fb1f9 0%, #4467f3 100%);
     overflow: hidden;
     color: white;

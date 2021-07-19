@@ -1,11 +1,7 @@
-import React, { Component } from 'react';
-import './Loading.css';
+import React, { Component } from "react";
+import "./Loading.css";
 import * as animation from "../../Images/profile.json";
 import Lottie from "react-lottie";
-
-
-
-
 
 const defaultOptions = {
     loop: false,
@@ -19,9 +15,9 @@ const defaultOptions = {
 function LoadingMessage() {
     return (
         <div className="backsplash">
-        <div className="splash-screen">
-            <Lottie options={defaultOptions} height={120} width={120} />
-        </div>
+            <div className="splash-screen">
+                <Lottie options={defaultOptions} height={120} width={120} />
+            </div>
         </div>
     );
 }
@@ -31,7 +27,7 @@ function withSplashScreen(WrappedComponent) {
         constructor(props) {
             super(props);
             this.state = {
-                loading: true,
+                loading: true
             };
         }
 
