@@ -7,7 +7,7 @@ import LanguageIcon from '@material-ui/icons/Language';
 import Divider from '@material-ui/core/Divider';
 import Button from '@material-ui/core/Button';
 import Fade from 'react-reveal/Fade';
-import event from '../../utils/analytics';
+import { event } from '../../utils/analytics';
 
 
 

@@ -7,7 +7,7 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import DescriptionIcon from '@material-ui/icons/Description';
 import MailIcon from '@material-ui/icons/Mail';
-import event from '../../utils/analytics';
+import { event } from '../../utils/analytics';
 
 
 import { makeStyles } from '@material-ui/core/styles';

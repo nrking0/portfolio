@@ -20,7 +20,7 @@ import DescriptionIcon from '@material-ui/icons/Description';
 import MailIcon from '@material-ui/icons/Mail';
 import './Sidebar.css';
 import FadeIn from "react-fade-in";
-import event from '../../utils/analytics';
+import { event } from '../../utils/analytics';
 
 const drawerWidth = 280;
 

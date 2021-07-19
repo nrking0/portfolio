@@ -3,7 +3,7 @@ import './Projects.css';
 import { Element } from 'react-scroll';
 import Button from '@material-ui/core/Button';
 import Fade from 'react-reveal/Fade';
-import event from '../../utils/analytics';
+import { event } from '../../utils/analytics';
 
 const Projects = (props) => {
 
