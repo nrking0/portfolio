@@ -4,8 +4,7 @@ import { Element } from "react-scroll";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import { Link } from "react-scroll";
 
-const Home = () => {
-    return (
+const Home = () => (
         <Element id="Home">
             <div className="base">
                 <h1>Hello, I am Nick!</h1>
@@ -27,7 +26,6 @@ const Home = () => {
                 </div>
             </div>
         </Element>
-    );
-};
+);
 
 export default Home;

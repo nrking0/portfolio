@@ -31,36 +31,6 @@ const Projects = (props) => {
                 style={{ margin: "auto", justifyContent: "center" }}
                 class="main items">
                 <Fade bottom>
-                    <article
-                        style={{ width: "40vh", marginBottom: "5%" }}
-                        className="item">
-                        <header>
-                            <a href={blankURL}>
-                                <img
-                                    className="polarioImage"
-                                    src={
-                                        require("../../Images/polario.png")
-                                            .default
-                                    }
-                                    alt=""
-                                />
-                            </a>
-                            <h3>Polario</h3>
-                        </header>
-                        <p>
-                            This is a Chrome Extension that I am currently
-                            working on that rates the reliability of news
-                            sources. Polario takes a bias rating combined with
-                            an accuracy rating to calculate an overall score for
-                            a source. Eventually we hope to add user accounts to
-                            the extension along with article-specific bias
-                            ratings.
-                        </p>
-
-                        <Button href="" variant="outlined" color="primary">
-                            Currently in Development
-                        </Button>
-                    </article>
 
                     <article
                         style={{ width: "40vh", marginBottom: "5%" }}
@@ -92,6 +62,37 @@ const Projects = (props) => {
                         </Button>
                     </article>
 
+                    <article
+                        style={{ width: "40vh", marginBottom: "5%" }}
+                        className="item">
+                        <header>
+                            <a href="https://github.com/amit-sawhney/polario-extension">
+                                <img
+                                    className="polarioImage"
+                                    src={
+                                        require("../../Images/polario.png")
+                                            .default
+                                    }
+                                    alt=""
+                                />
+                            </a>
+                            <h3>Polario</h3>
+                        </header>
+                        <p>
+                            This is a Chrome Extension that I am currently
+                            working on that rates the reliability of news
+                            sources. Polario takes a bias rating combined with
+                            an accuracy rating to calculate an overall score for
+                            a source. Eventually we hope to add user accounts to
+                            the extension along with article-specific bias
+                            ratings.
+                        </p>
+
+                        <Button href="https://github.com/amit-sawhney/polario-extension" variant="contained" color="primary">
+                            View Code
+                        </Button>
+                    </article>
+                    
                     <article
                         style={{ width: "40vh", marginBottom: "5%" }}
                         className="item">
