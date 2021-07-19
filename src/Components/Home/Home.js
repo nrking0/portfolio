@@ -5,27 +5,27 @@ import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import { Link } from "react-scroll";
 
 const Home = () => (
-        <Element id="Home">
-            <div className="base">
-                <h1>Hello, I am Nick!</h1>
-                <p>Student and Developer</p>
-                <div className="arrow">
-                    <Link
+    <Element id="Home">
+        <div className="base">
+            <h1>Hello, I am Nick!</h1>
+            <p>Student and Developer</p>
+            <div className="arrow">
+                <Link
+                    className="arrows"
+                    activeClass="active"
+                    to="About"
+                    spy={true}
+                    smooth={true}
+                    duration={1200}>
+                    <ExpandMoreIcon
                         className="arrows"
-                        activeClass="active"
-                        to="About"
-                        spy={true}
-                        smooth={true}
-                        duration={1200}>
-                        <ExpandMoreIcon
-                            className="arrows"
-                            fontSize="large"
-                            color="inherit"
-                        />
-                    </Link>
-                </div>
+                        fontSize="large"
+                        color="inherit"
+                    />
+                </Link>
             </div>
-        </Element>
+        </div>
+    </Element>
 );
 
 export default Home;

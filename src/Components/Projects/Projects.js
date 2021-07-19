@@ -31,7 +31,6 @@ const Projects = (props) => {
                 style={{ margin: "auto", justifyContent: "center" }}
                 class="main items">
                 <Fade bottom>
-
                     <article
                         style={{ width: "40vh", marginBottom: "5%" }}
                         className="item">
@@ -66,7 +65,10 @@ const Projects = (props) => {
                         style={{ width: "40vh", marginBottom: "5%" }}
                         className="item">
                         <header>
-                            <a href="https://github.com/amit-sawhney/polario-extension">
+                            <a
+                                href="https://github.com/amit-sawhney/polario-extension"
+                                target="_blank"
+                                rel="noopener noreferrer">
                                 <img
                                     className="polarioImage"
                                     src={
@@ -88,11 +90,15 @@ const Projects = (props) => {
                             ratings.
                         </p>
 
-                        <Button href="https://github.com/amit-sawhney/polario-extension" variant="contained" color="primary">
+                        <Button
+                            href="https://github.com/amit-sawhney/polario-extension"
+                            target="_blank"
+                            variant="contained"
+                            color="primary">
                             View Code
                         </Button>
                     </article>
-                    
+
                     <article
                         style={{ width: "40vh", marginBottom: "5%" }}
                         className="item">
