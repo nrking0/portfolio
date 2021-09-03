@@ -42,9 +42,9 @@ const activities = [
         type: "Work",
         title: "State Farm Insurance Company",
         role: "Information Secuirty Intern",
-        date: "Summer 2021",
+        date: "May 2021 - Present",
         description:
-            "I was recently hired as an intern at State Farm Insurance Company within the Information Security Department for Summer 2021."
+            "Over the Summer of 2021 I worked as an intern for State Farm Insurance in the Information Security Department. More specifically, I worked on the Vulnerability Response and Reporting Team. With my team I identified, analyzed, and remediated Enterprise-Wide vulnerabilities and worked on a variety of projects. Additionally, I was asked to stay on as an Intern during the school year, and I will continuing my role on the same team for Fall 2021."
     },
     {
         type: "Work",

@@ -54,7 +54,7 @@ const Contact = () => {
                         GitHub
                     </Button>
                     <Button
-                        href="https://drive.google.com/file/d/1L2j00rdrF8nt2qiMFN22BBhOaMH77kVB/view?usp=sharing"
+                        href="https://drive.google.com/file/d/1o_-Ky7J9h7osFq_toTZPBt8X9gOX11br/view?usp=sharing"
                         target="_blank"
                         variant="contained"
                         color="secondary"

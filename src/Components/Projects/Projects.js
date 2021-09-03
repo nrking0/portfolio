@@ -65,6 +65,43 @@ const Projects = (props) => {
                         style={{ width: "40vh", marginBottom: "5%" }}
                         className="item">
                         <header>
+                            <a href={blankURL}>
+                                <img
+                                    className="polarioImage"
+                                    src={
+                                        require("../../Images/statefarm.jpeg")
+                                            .default
+                                    }
+                                    alt=""
+                                />
+                            </a>
+                            <h3>Climate Risk Assessment Dashboard</h3>
+                        </header>
+                        <p>
+                            During my time at State Farm, I worked with a team
+                            during their annual Hack Day to develop a web
+                            application to tell users how at-risk a location is
+                            to Climate Change using climate data. The
+                            application presented individualied risk for
+                            different climate disasters, i.e. wildfire or
+                            flooding, in each area. Additionally, the
+                            application informed customers how these different
+                            risks may impact their home-owner's insurance.
+                        </p>
+
+                        <Button
+                            href=""
+                            target="_blank"
+                            variant="outlined"
+                            color="primary">
+                            Code not Available
+                        </Button>
+                    </article>
+
+                    <article
+                        style={{ width: "40vh", marginBottom: "5%" }}
+                        className="item">
+                        <header>
                             <a
                                 href="https://github.com/amit-sawhney/polario-extension"
                                 target="_blank"
