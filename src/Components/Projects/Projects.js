@@ -31,36 +31,7 @@ const Projects = (props) => {
                 style={{ margin: "auto", justifyContent: "center" }}
                 class="main items">
                 <Fade bottom>
-                    <article
-                        style={{ width: "40vh", marginBottom: "5%" }}
-                        className="item">
-                        <header>
-                            <a href={blankURL}>
-                                <img
-                                    className="polarioImage"
-                                    src={
-                                        require("../../Images/IAware.png")
-                                            .default
-                                    }
-                                    alt=""
-                                />
-                            </a>
-                            <h3>I-Aware</h3>
-                        </header>
-                        <p>
-                            This is an app I am currently working on with a team
-                            at my school. I am helping build an app, using
-                            Flutter, that will give important civic information
-                            to voters. The app will give information about
-                            citizen's local representatives, have up to date
-                            news, and even help people register to vote.
-                        </p>
-
-                        <Button href="" variant="outlined" color="primary">
-                            Currently in Development
-                        </Button>
-                    </article>
-
+                   
                     <article
                         style={{ width: "40vh", marginBottom: "5%" }}
                         className="item">
@@ -89,13 +60,13 @@ const Projects = (props) => {
                             risks may impact their home-owner's insurance.
                         </p>
 
-                        <Button
+                        {/* <Button
                             href=""
                             target="_blank"
                             variant="outlined"
                             color="primary">
                             Code not Available
-                        </Button>
+                        </Button> */}
                     </article>
 
                     <article
@@ -140,6 +111,36 @@ const Projects = (props) => {
                         style={{ width: "40vh", marginBottom: "5%" }}
                         className="item">
                         <header>
+                            <a href={blankURL}>
+                                <img
+                                    className="polarioImage"
+                                    src={
+                                        require("../../Images/IAware.png")
+                                            .default
+                                    }
+                                    alt=""
+                                />
+                            </a>
+                            <h3>I-Aware</h3>
+                        </header>
+                        <p>
+                            This is an app I am worked on with a team
+                            at my school. I am helped build an app, using
+                            Flutter, that will give important civic information
+                            to voters. The app gives information about
+                            citizen's local representatives, have up to date
+                            news, and even help people register to vote.
+                        </p>
+
+                        {/* <Button href="" variant="outlined" color="primary">
+                            Currently in Development
+                        </Button> */}
+                    </article>
+
+                    {/* <article
+                        style={{ width: "40vh", marginBottom: "5%" }}
+                        className="item">
+                        <header>
                             <a
                                 href="https://voteuhigh.herokuapp.com"
                                 target="_blank"
@@ -171,7 +172,7 @@ const Projects = (props) => {
                             target="_blank">
                             Visit Site
                         </Button>
-                    </article>
+                    </article> */}
 
                     <article
                         style={{ width: "40vh", marginBottom: "5%" }}
