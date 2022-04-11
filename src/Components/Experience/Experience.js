@@ -50,7 +50,7 @@ const activities = [
         type: "Work",
         title: "Honors Introduction to Computer Science",
         role: "Project Manager and Course Assistant",
-        date: "January 2021 – May 2021",
+        date: "January 2021 – December 2021",
         description:
             "For Spring semester 2021, I was selected to be a project manager for the honors section of introduction to computer science (CS 196). I am managing a small project group to build a full stack application that analyzes stock data. Additionally, I help out with the course by running office hours and helping students."
     },
