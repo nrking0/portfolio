@@ -136,7 +136,7 @@ const About = () => {
                 </div>
                 <Button
                     style={{ marginTop: "4%" }}
-                    href="https://drive.google.com/file/d/1o_-Ky7J9h7osFq_toTZPBt8X9gOX11br/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1bOiAlMfwQyoGXgsWRYhUCxb3TYSyTDzd/view?usp=sharing"
                     variant="contained"
                     color="primary"
                     target="_blank">
