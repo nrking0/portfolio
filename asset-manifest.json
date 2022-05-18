@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.59a63829.chunk.css",
-    "main.js": "/static/js/main.fef1b5a6.chunk.js",
-    "main.js.map": "/static/js/main.fef1b5a6.chunk.js.map",
+    "main.css": "/static/css/main.54dcac78.chunk.css",
+    "main.js": "/static/js/main.33937664.chunk.js",
+    "main.js.map": "/static/js/main.33937664.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.5ebc510a.js",
     "runtime-main.js.map": "/static/js/runtime-main.5ebc510a.js.map",
     "static/js/2.418b85eb.chunk.js": "/static/js/2.418b85eb.chunk.js",
     "static/js/2.418b85eb.chunk.js.map": "/static/js/2.418b85eb.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.59a63829.chunk.css.map": "/static/css/main.59a63829.chunk.css.map",
+    "static/css/main.54dcac78.chunk.css.map": "/static/css/main.54dcac78.chunk.css.map",
     "static/js/2.418b85eb.chunk.js.LICENSE.txt": "/static/js/2.418b85eb.chunk.js.LICENSE.txt",
     "static/media/DGSAward.png": "/static/media/DGSAward.f2ffd64a.png",
     "static/media/IAware.png": "/static/media/IAware.90479436.png",
@@ -27,7 +27,7 @@
   "entrypoints": [
     "static/js/runtime-main.5ebc510a.js",
     "static/js/2.418b85eb.chunk.js",
-    "static/css/main.59a63829.chunk.css",
-    "static/js/main.fef1b5a6.chunk.js"
+    "static/css/main.54dcac78.chunk.css",
+    "static/js/main.33937664.chunk.js"
   ]
 }
