@@ -6,6 +6,15 @@
     color: white;
     padding-bottom: 5%;
     padding-top: 10%;
+
+    /* background-color: #4467f3;
+    border-top-left-radius: 65% 5.5%;
+    border-top-right-radius: 65% 5.5%;
+    box-shadow: 0px 0px 7px 1px black; */
+}
+
+.background {
+    background-color: #f1f1f1;
 }
 
 /* #Contact::before {

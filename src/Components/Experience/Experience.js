@@ -48,6 +48,14 @@ const activities = [
     },
     {
         type: "Work",
+        title: "HackIllinois",
+        role: "Software Engineer - Web Team",
+        date: "October 2021 - Present",
+        description:
+            "In the Fall of 2021 I joined on the HackIllinois team working on the website helping to run the annual HackIllinois Hackathon. As a member of the web team I collaborated with the rest of my team to bring designs to fruition on the HackIllinois website. For the most recent Hackathon, I mainly worked on creating the registration page that was successfully used to register over 1000 participants."
+    },
+    {
+        type: "Work",
         title: "Honors Introduction to Computer Science",
         role: "Project Manager and Course Assistant",
         date: "January 2021 – December 2021",
@@ -64,25 +72,32 @@ const activities = [
     },
     {
         type: "Curriculars",
+        title: "Marching Illini",
+        role: "Trumpet Section Member",
+        date: "August 2020 – Present",
+        description:
+        "In the Summer of 2020 I auditioned for, and eventually was accepted into, the Marching Illini. We learn a large repertoire, which we play at each football game. Beyond that, we work on marching fundamentals, leadership development, and simply bonding more as a band. Additionally, as member of the athletic bands I have played at a multitude of school events including the Big Ten Basketball Tournament and even the St. Patrick's Day Parade in Dublin, Ireland."
+    },
+    {
+        type: "Curriculars",
+        title: "Phi Mu Alpha Sinfonia",
+        role: "Secretary",
+        date: "September 2021 – Present",
+        description: "During the fall semester of 2021 I decided to rush the Music Fraternity Phi Mu Alpha Sinfonia. As a member of the fraternity we organize many charity events throughout the year where we use music to raise money for many local causes throughout our local community. Additionally, in December of 2021 I was elected to be the Secretary of the organization. I am responsible for keeping proper records and communicating information to our members." 
+    },
+    {
+        type: "Curriculars",
         title: "Association for Computing Machinery",
         role: "Special Interest Group for Information Security Member",
-        date: "August 2020 – Present",
+        date: "August 2020 – August 2021",
         description:
             "Throughout ACM I have had many opportunities to learn more about the amazing world of Computer Science! Within the special interest group for information security I have learned a lot about best practices and vulnerabilities within our current technologies. Additionally, I have been able to work on projects with other students for things we care about. For example, this Fall I am working with a team within ACM to build an Android App that can help communicate important voter information to students and help them register to vote."
     },
     {
         type: "Curriculars",
-        title: "Marching Illini",
-        role: "Trumpet Section Member",
-        date: "August 2020 – Present",
-        description:
-            "In the Summer of 2020 I auditioned for, and eventually was accepted into, the Marching Illini. While our season looks a little different due to COVID-19, we still have many responsibilities. We learn a large repertoire, which we would normally play at each football game. Beyond that, we work on marching fundamentals, leadership development, and simply bonding more as a band."
-    },
-    {
-        type: "Curriculars",
         title: "Campus Honors Program Honors Student Council",
         role: "Academic Engagement Committee Member",
-        date: "August 2020 – Present",
+        date: "August 2020 – May 2021",
         description:
             "At the beginning of the 2020 school year I decided to join the Honors Student Council. Through the Academic Engagement Committee I have planned events to help bring students academic resources and help them meet professors. I have set up meet-and-greets and talks between students and professors and publicized the events to garner wider engagement."
     },
@@ -160,7 +175,7 @@ const Experience = () => {
             <Fade bottom cascade>
                 <h1>What I Have Done</h1>
                 <div className="descrip">
-                    <h4>
+                    <p>
                         Throughout my time in high school, and now in college, I
                         have participated in a wide variety of extracurriculars,
                         volunteering, and work experiences. I always have loved
@@ -171,144 +186,31 @@ const Experience = () => {
                         disciplines. Whether it is working on a new project or
                         serving ice cream, I always put my all into whatever I
                         do!
-                    </h4>
+                    </p>
                 </div>
             </Fade>
             <Fade bottom>
-                {section === "Work" ? (
-                    <div className="toggleBar">
-                        <Button
-                            style={{ margin: "1%" }}
-                            variant="contained"
-                            color="secondary"
-                            onClick={() => {
-                                handleClick("Work");
-                            }}>
-                            Work Experience
-                        </Button>
-                        <Button
-                            style={{ margin: "1%" }}
-                            variant="outlined"
-                            color="secondary"
-                            onClick={() => {
-                                handleClick("Curriculars");
-                            }}>
-                            Extra-Curriculars
-                        </Button>
-                        <Button
-                            style={{ margin: "1%" }}
-                            variant="outlined"
-                            color="secondary"
-                            onClick={() => {
-                                handleClick("Courses");
-                            }}>
-                            Relevant Coursework
-                        </Button>
-                    </div>
-                ) : (
-                    <>
-                        {section === "Curriculars" ? (
-                            <div className="toggleBar">
-                                <Button
-                                    style={{ margin: "1%" }}
-                                    variant="outlined"
-                                    color="secondary"
-                                    onClick={() => {
-                                        handleClick("Work");
-                                    }}>
-                                    Work Experience
-                                </Button>
-                                <Button
-                                    style={{ margin: "1%" }}
-                                    variant="contained"
-                                    color="secondary"
-                                    onClick={() => {
-                                        handleClick("Curriculars");
-                                    }}>
-                                    Extra-Curriculars
-                                </Button>
-                                <Button
-                                    style={{ margin: "1%" }}
-                                    variant="outlined"
-                                    color="secondary"
-                                    onClick={() => {
-                                        handleClick("Courses");
-                                    }}>
-                                    Relevant Coursework
-                                </Button>
-                            </div>
-                        ) : (
-                            <>
-                                {section === "Courses" ? (
-                                    <div className="toggleBar">
-                                        <Button
-                                            style={{ margin: "1%" }}
-                                            variant="outlined"
-                                            color="secondary"
-                                            onClick={() => {
-                                                handleClick("Work");
-                                            }}>
-                                            Work Experience
-                                        </Button>
-                                        <Button
-                                            style={{ margin: "1%" }}
-                                            variant="outlined"
-                                            color="secondary"
-                                            onClick={() => {
-                                                handleClick("Curriculars");
-                                            }}>
-                                            Extra-Curriculars
-                                        </Button>
-                                        <Button
-                                            style={{ margin: "1%" }}
-                                            variant="contained"
-                                            color="secondary"
-                                            onClick={() => {
-                                                handleClick("Courses");
-                                            }}>
-                                            Relevant Coursework
-                                        </Button>
-                                    </div>
-                                ) : (
-                                    <div className="toggleBar">
-                                        <Button
-                                            style={{ margin: "1%" }}
-                                            variant="outlined"
-                                            color="secondary"
-                                            onClick={() => {
-                                                handleClick("Work");
-                                            }}>
-                                            Work Experience
-                                        </Button>
-                                        <Button
-                                            style={{ margin: "1%" }}
-                                            variant="outlined"
-                                            color="secondary"
-                                            onClick={() => {
-                                                handleClick("Curriculars");
-                                            }}>
-                                            Extra-Curriculars
-                                        </Button>
-                                        <Button
-                                            style={{ margin: "1%" }}
-                                            variant="outlined"
-                                            color="secondary"
-                                            onClick={() => {
-                                                handleClick("Courses");
-                                            }}>
-                                            Relevant Coursework
-                                        </Button>
-                                    </div>
-                                )}
-                            </>
-                        )}
-                    </>
-                )}
+                <div className="toggleBar">
+                    <Button
+                        style={{ margin: "1%" }}
+                        variant={section === "Work" ? "contained" : "outlined"}
+                        color="secondary"
+                        onClick={() => {
+                            handleClick("Work");
+                        }}>
+                        Work Experience
+                    </Button>
+                    <Button
+                        style={{ margin: "1%" }}
+                        variant={section === "Curriculars" ? "contained" : "outlined"}
+                        color="secondary"
+                        onClick={() => {
+                            handleClick("Curriculars");
+                        }}>
+                        Extra-Curriculars
+                    </Button>
+                </div>
                 <div className="experienceMain">
-                    <div className="slideshow">
-                        <Slideshow />
-                    </div>
-
                     <div className="paperList">
                         {activities.map((activity) => (
                             <Fade collapse when={section === activity.type}>
@@ -371,6 +273,10 @@ const Experience = () => {
                                 )}
                             </>
                         ))}
+                    </div>
+
+                    <div className="slideshow">
+                        <Slideshow />
                     </div>
                 </div>
             </Fade>

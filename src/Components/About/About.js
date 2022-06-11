@@ -74,8 +74,9 @@ const About = () => {
                         <h1>Education</h1>
                         <h3>University of Illinois at Urbana-Champaign</h3>
                         <p>B.S. in Mathematics and Computer Science</p>
+                        <p>Minor in Music</p>
                         <p>August 2020 - Present</p>
-                        <p>GPA: 3.94/4.0</p>
+                        <p>GPA: 3.91/4.0</p>
                         <h3>University High School, Normal Illinois</h3>
                         <p>August 2016 - May 2020</p>
                         <p>GPA: 4.0/4.0, Valedictorian</p>
@@ -95,6 +96,7 @@ const About = () => {
                             Chancellor's Scholar
                         </p>
                         <p>University of Illinois James Scholar</p>
+                        <p>2021 State Farm Hack-Day Winner</p>
                         <p>State Farm Foundations Scholar</p>
                         <p>
                             National Speech and Debate Association <br />
@@ -122,16 +124,15 @@ const About = () => {
                             Communicative, Leadership, Growth-Mindset, Emotional
                             Intelligence, Collaborative
                         </p>
-                        <h3>Languages</h3>
+                        <h3>Languages & Technologies</h3>
                         <p>
                             Spanish, Java, HTML/CSS, SQL, Python, JavaScript,
-                            Bash, Dart, C++, R
+                            Bash, Dart, C++, R, AWS, React, Node.js, Express.js, MongoDB,
+                            AzureAD, Flutter, Cinder, Flask
                         </p>
-                        <h3>Frameworks</h3>
-                        <p>
-                            Django, React, Node.js, Express.js, PostgreSQL,
-                            Heroku, Flutter, Cinder, Flask
-                        </p>
+                        
+                        <h3>Courses</h3>
+                        <p>Software Design Studio, Discrete Math, Calculus 1-3, Linear Algebra, Data Structures, Numerical Methods, Systems Programming</p>
                     </div>
                 </div>
                 <Button

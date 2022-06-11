@@ -20,51 +20,53 @@ const Contact = () => {
     const classes = useStyles();
 
     return (
-        <Element id="Contact">
-            <Fade bottom cascade>
-                <h1>Want to talk more?</h1>
-                <h2>Let's get in touch!</h2>
-            </Fade>
-            <Fade cascade bottom>
-                <div className="buttons">
-                    <Button
-                        href="mailto:nrking2@illinois.edu"
-                        variant="contained"
-                        color="secondary"
-                        className={classes.button}
-                        startIcon={<MailIcon />}>
-                        E-Mail
-                    </Button>
-                    <Button
-                        href="https://www.linkedin.com/in/nrking0"
-                        target="_blank"
-                        variant="contained"
-                        color="secondary"
-                        className={classes.button}
-                        startIcon={<LinkedInIcon />}>
-                        LinkedIn
-                    </Button>
-                    <Button
-                        href="https://github.com/nrking0"
-                        target="_blank"
-                        variant="contained"
-                        color="secondary"
-                        className={classes.button}
-                        startIcon={<GitHubIcon />}>
-                        GitHub
-                    </Button>
-                    <Button
-                        href="https://drive.google.com/file/d/1bOiAlMfwQyoGXgsWRYhUCxb3TYSyTDzd/view?usp=sharing"
-                        target="_blank"
-                        variant="contained"
-                        color="secondary"
-                        className={classes.button}
-                        startIcon={<DescriptionIcon />}>
-                        Resume
-                    </Button>
-                </div>
-            </Fade>
-        </Element>
+        <div className="background">
+            <Element id="Contact">
+                <Fade bottom cascade>
+                    <h1>Want to talk more?</h1>
+                    <h2>Let's get in touch!</h2>
+                </Fade>
+                <Fade cascade bottom>
+                    <div className="buttons">
+                        <Button
+                            href="mailto:nrking2@illinois.edu"
+                            variant="contained"
+                            color="secondary"
+                            className={classes.button}
+                            startIcon={<MailIcon />}>
+                            E-Mail
+                        </Button>
+                        <Button
+                            href="https://www.linkedin.com/in/nrking0"
+                            target="_blank"
+                            variant="contained"
+                            color="secondary"
+                            className={classes.button}
+                            startIcon={<LinkedInIcon />}>
+                            LinkedIn
+                        </Button>
+                        <Button
+                            href="https://github.com/nrking0"
+                            target="_blank"
+                            variant="contained"
+                            color="secondary"
+                            className={classes.button}
+                            startIcon={<GitHubIcon />}>
+                            GitHub
+                        </Button>
+                        <Button
+                            href="https://drive.google.com/file/d/1bOiAlMfwQyoGXgsWRYhUCxb3TYSyTDzd/view?usp=sharing"
+                            target="_blank"
+                            variant="contained"
+                            color="secondary"
+                            className={classes.button}
+                            startIcon={<DescriptionIcon />}>
+                            Resume
+                        </Button>
+                    </div>
+                </Fade>
+            </Element>
+        </div>
     );
 };
 
